@@ -1,0 +1,120 @@
+2026-03-30 13:24:41 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:24:41 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:24:41 - src.models.classifier - INFO - Training completed in 0.26s
+2026-03-30 13:24:43 - src.models.classifier - INFO - Inference: total=0.028s, per_sample=17.8179ms
+2026-03-30 13:25:25 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:25:25 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:25:26 - src.models.classifier - INFO - Training completed in 0.88s
+2026-03-30 13:25:26 - src.models.classifier - INFO - Inference: total=0.008s, per_sample=0.6429ms
+2026-03-30 13:25:41 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:25:41 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:25:41 - src.models.classifier - INFO - Training completed in 0.15s
+2026-03-30 13:25:43 - src.models.classifier - INFO - Inference: total=0.028s, per_sample=19.9440ms
+2026-03-30 13:25:58 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:25:58 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:25:58 - src.models.classifier - INFO - Training completed in 0.44s
+2026-03-30 13:25:58 - src.models.classifier - INFO - Inference: total=0.003s, per_sample=0.8756ms
+2026-03-30 13:26:08 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:26:08 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:26:08 - src.models.classifier - INFO - Training completed in 0.19s
+2026-03-30 13:26:11 - src.models.classifier - INFO - Inference: total=0.031s, per_sample=26.1066ms
+2026-03-30 13:26:20 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:26:20 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:26:20 - src.models.classifier - INFO - Training completed in 0.28s
+2026-03-30 13:26:20 - src.models.classifier - INFO - Inference: total=0.002s, per_sample=0.6641ms
+2026-03-30 13:28:10 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:28:10 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:28:11 - src.models.classifier - INFO - Training completed in 0.65s
+2026-03-30 13:28:13 - src.models.classifier - INFO - Inference: total=0.039s, per_sample=20.2326ms
+2026-03-30 13:30:06 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:30:06 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:30:07 - src.models.classifier - INFO - Training completed in 1.71s
+2026-03-30 13:30:07 - src.models.classifier - INFO - Inference: total=0.018s, per_sample=0.6567ms
+2026-03-30 13:31:09 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:31:09 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:31:10 - src.models.classifier - INFO - Training completed in 0.34s
+2026-03-30 13:31:12 - src.models.classifier - INFO - Inference: total=0.040s, per_sample=25.8130ms
+2026-03-30 13:32:21 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:32:21 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:32:22 - src.models.classifier - INFO - Training completed in 1.04s
+2026-03-30 13:32:22 - src.models.classifier - INFO - Inference: total=0.006s, per_sample=0.6857ms
+2026-03-30 13:32:53 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:32:53 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:32:53 - src.models.classifier - INFO - Training completed in 0.20s
+2026-03-30 13:32:56 - src.models.classifier - INFO - Inference: total=0.030s, per_sample=29.2976ms
+2026-03-30 13:33:27 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:33:27 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:33:28 - src.models.classifier - INFO - Training completed in 0.70s
+2026-03-30 13:33:28 - src.models.classifier - INFO - Inference: total=0.005s, per_sample=0.6864ms
+2026-03-30 13:33:47 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:33:47 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:33:47 - src.models.classifier - INFO - Training completed in 0.18s
+2026-03-30 13:33:50 - src.models.classifier - INFO - Inference: total=0.029s, per_sample=28.3945ms
+2026-03-30 13:34:08 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:34:08 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:34:08 - src.models.classifier - INFO - Training completed in 0.50s
+2026-03-30 13:34:08 - src.models.classifier - INFO - Inference: total=0.002s, per_sample=0.6504ms
+2026-03-30 13:36:56 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:36:56 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:36:57 - src.models.classifier - INFO - Training completed in 1.46s
+2026-03-30 13:37:00 - src.models.classifier - INFO - Inference: total=0.074s, per_sample=30.0994ms
+2026-03-30 13:39:53 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:39:53 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:39:57 - src.models.classifier - INFO - Training completed in 3.80s
+2026-03-30 13:39:57 - src.models.classifier - INFO - Inference: total=0.065s, per_sample=0.8929ms
+2026-03-30 13:52:30 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 13:52:30 - src.models.classifier - INFO - Training rf model...
+2026-03-30 13:52:31 - src.models.classifier - INFO - Training completed in 0.80s
+2026-03-30 13:52:34 - src.models.classifier - INFO - Inference: total=0.054s, per_sample=27.4423ms
+2026-03-30 13:54:03 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 13:54:03 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 13:54:05 - src.models.classifier - INFO - Training completed in 2.17s
+2026-03-30 13:54:05 - src.models.classifier - INFO - Inference: total=0.025s, per_sample=0.9529ms
+2026-03-30 14:02:48 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:02:48 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:02:48 - src.models.classifier - INFO - Training completed in 0.34s
+2026-03-30 14:02:50 - src.models.classifier - INFO - Inference: total=0.028s, per_sample=19.0083ms
+2026-03-30 14:03:19 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:03:19 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:03:20 - src.models.classifier - INFO - Training completed in 0.69s
+2026-03-30 14:03:20 - src.models.classifier - INFO - Inference: total=0.006s, per_sample=0.6349ms
+2026-03-30 14:16:19 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:16:19 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:16:23 - src.models.classifier - INFO - Training completed in 3.39s
+2026-03-30 14:16:25 - src.models.classifier - INFO - Inference: total=0.095s, per_sample=19.4149ms
+2026-03-30 14:21:18 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:21:18 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:21:24 - src.models.classifier - INFO - Training completed in 5.95s
+2026-03-30 14:21:25 - src.models.classifier - INFO - Inference: total=0.085s, per_sample=0.7553ms
+2026-03-30 15:21:46 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 15:21:46 - src.models.classifier - INFO - Training rf model...
+2026-03-30 15:21:48 - src.models.classifier - INFO - Training completed in 1.87s
+2026-03-30 15:21:50 - src.models.classifier - INFO - Inference: total=0.075s, per_sample=19.2834ms
+2026-03-30 15:24:30 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 15:24:30 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 15:24:34 - src.models.classifier - INFO - Training completed in 3.30s
+2026-03-30 15:24:34 - src.models.classifier - INFO - Inference: total=0.048s, per_sample=1.0026ms
+2026-03-30 16:06:58 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 16:06:58 - src.models.classifier - INFO - Training rf model...
+2026-03-30 16:06:59 - src.models.classifier - INFO - Training completed in 0.84s
+2026-03-30 16:07:01 - src.models.classifier - INFO - Inference: total=0.052s, per_sample=26.8789ms
+2026-03-30 16:08:40 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 16:08:40 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 16:08:42 - src.models.classifier - INFO - Training completed in 2.05s
+2026-03-30 16:08:42 - src.models.classifier - INFO - Inference: total=0.023s, per_sample=1.0565ms
+2026-03-30 16:30:38 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 16:30:38 - src.models.classifier - INFO - Training rf model...
+2026-03-30 16:30:39 - src.models.classifier - INFO - Training completed in 0.71s
+2026-03-30 16:30:41 - src.models.classifier - INFO - Inference: total=0.040s, per_sample=19.8357ms
+2026-03-30 16:31:38 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 16:31:38 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 16:31:39 - src.models.classifier - INFO - Training completed in 1.32s
+2026-03-30 16:31:39 - src.models.classifier - INFO - Inference: total=0.012s, per_sample=0.9002ms
+2026-03-30 16:48:46 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 16:48:46 - src.models.classifier - INFO - Training rf model...
+2026-03-30 16:48:47 - src.models.classifier - INFO - Training completed in 0.38s
+2026-03-30 16:48:49 - src.models.classifier - INFO - Inference: total=0.040s, per_sample=22.4229ms
+2026-03-30 16:49:20 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 16:49:20 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 16:49:21 - src.models.classifier - INFO - Training completed in 0.79s
+2026-03-30 16:49:21 - src.models.classifier - INFO - Inference: total=0.009s, per_sample=0.7869ms

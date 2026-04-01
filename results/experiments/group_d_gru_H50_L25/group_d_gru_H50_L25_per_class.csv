@@ -1,0 +1,19 @@
+device,precision,recall,f1
+Amazon Echo,1.0,1.0,1.0
+Android Phone 2,0.9622641509433962,1.0,0.9807692307692307
+Belkin Wemo switch,1.0,1.0,1.0
+Belkin wemo motion sensor,1.0,0.996078431372549,0.9980353634577603
+Dropcam,1.0,1.0,1.0
+HP Printer,1.0,1.0,1.0
+Laptop,1.0,1.0,1.0
+Netatmo Welcome,1.0,1.0,1.0
+Netatmo weather station,1.0,1.0,1.0
+PIX-STAR Photo-frame,1.0,1.0,1.0
+Samsung Galaxy Tab,1.0,0.8636363636363636,0.926829268292683
+Samsung SmartCam,1.0,1.0,1.0
+Smart Things,1.0,1.0,1.0
+TP-Link Day Night Cloud camera,1.0,1.0,1.0
+TP-Link Smart plug,0.35714285714285715,1.0,0.5263157894736842
+TPLink Router Bridge LAN,1.0,1.0,1.0
+Triby Speaker,1.0,1.0,1.0
+Withings Smart Baby Monitor,0.9830508474576272,1.0,0.9914529914529915

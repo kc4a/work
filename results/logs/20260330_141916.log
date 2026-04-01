@@ -1,0 +1,508 @@
+2026-03-30 14:19:57 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:19:57 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:19:57 - src.models.classifier - INFO - Training completed in 0.26s
+2026-03-30 14:19:59 - src.models.classifier - INFO - Inference: total=0.028s, per_sample=18.1414ms
+2026-03-30 14:19:59 - src.evaluation.clf_metrics - INFO - Accuracy=0.9706  Macro-F1=0.9449  Weighted-F1=0.9703
+2026-03-30 14:19:59 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W60_S60\group_b_rf_W60_S60_metrics.json
+2026-03-30 14:19:59 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W60_S60\group_b_rf_W60_S60_per_class.csv
+2026-03-30 14:19:59 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W60_S60\group_b_rf_W60_S60_confusion.png
+2026-03-30 14:20:41 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:20:41 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:20:42 - src.models.classifier - INFO - Training completed in 0.87s
+2026-03-30 14:20:42 - src.models.classifier - INFO - Inference: total=0.008s, per_sample=0.6221ms
+2026-03-30 14:20:42 - src.evaluation.clf_metrics - INFO - Accuracy=0.9706  Macro-F1=0.9305  Weighted-F1=0.9705
+2026-03-30 14:20:42 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W60_S60\group_b_xgb_W60_S60_metrics.json
+2026-03-30 14:20:42 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W60_S60\group_b_xgb_W60_S60_per_class.csv
+2026-03-30 14:20:42 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W60_S60\group_b_xgb_W60_S60_confusion.png
+2026-03-30 14:20:57 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:20:57 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:20:57 - src.models.classifier - INFO - Training completed in 0.15s
+2026-03-30 14:20:59 - src.models.classifier - INFO - Inference: total=0.028s, per_sample=18.6383ms
+2026-03-30 14:20:59 - src.evaluation.clf_metrics - INFO - Accuracy=0.9756  Macro-F1=0.9532  Weighted-F1=0.9731
+2026-03-30 14:20:59 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S300\group_b_rf_W300_S300_metrics.json
+2026-03-30 14:20:59 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S300\group_b_rf_W300_S300_per_class.csv
+2026-03-30 14:20:59 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S300\group_b_rf_W300_S300_confusion.png
+2026-03-30 14:21:14 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:21:14 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:21:14 - src.models.classifier - INFO - Training completed in 0.45s
+2026-03-30 14:21:14 - src.models.classifier - INFO - Inference: total=0.003s, per_sample=0.7032ms
+2026-03-30 14:21:14 - src.evaluation.clf_metrics - INFO - Accuracy=0.9782  Macro-F1=0.9540  Weighted-F1=0.9773
+2026-03-30 14:21:14 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S300\group_b_xgb_W300_S300_metrics.json
+2026-03-30 14:21:14 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S300\group_b_xgb_W300_S300_per_class.csv
+2026-03-30 14:21:15 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S300\group_b_xgb_W300_S300_confusion.png
+2026-03-30 14:21:25 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:21:25 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:21:25 - src.models.classifier - INFO - Training completed in 0.13s
+2026-03-30 14:21:27 - src.models.classifier - INFO - Inference: total=0.029s, per_sample=18.6830ms
+2026-03-30 14:21:27 - src.evaluation.clf_metrics - INFO - Accuracy=0.9467  Macro-F1=0.9490  Weighted-F1=0.9380
+2026-03-30 14:21:27 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W900_S900\group_b_rf_W900_S900_metrics.json
+2026-03-30 14:21:27 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W900_S900\group_b_rf_W900_S900_per_class.csv
+2026-03-30 14:21:27 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W900_S900\group_b_rf_W900_S900_confusion.png
+2026-03-30 14:21:36 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:21:36 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:21:36 - src.models.classifier - INFO - Training completed in 0.29s
+2026-03-30 14:21:36 - src.models.classifier - INFO - Inference: total=0.002s, per_sample=0.6736ms
+2026-03-30 14:21:36 - src.evaluation.clf_metrics - INFO - Accuracy=0.9400  Macro-F1=0.8698  Weighted-F1=0.9305
+2026-03-30 14:21:36 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W900_S900\group_b_xgb_W900_S900_metrics.json
+2026-03-30 14:21:36 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W900_S900\group_b_xgb_W900_S900_per_class.csv
+2026-03-30 14:21:37 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W900_S900\group_b_xgb_W900_S900_confusion.png
+2026-03-30 14:23:25 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:23:25 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:23:26 - src.models.classifier - INFO - Training completed in 0.60s
+2026-03-30 14:23:28 - src.models.classifier - INFO - Inference: total=0.040s, per_sample=23.1326ms
+2026-03-30 14:23:28 - src.evaluation.clf_metrics - INFO - Accuracy=0.9810  Macro-F1=0.9359  Weighted-F1=0.9806
+2026-03-30 14:23:28 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S30\group_b_rf_W300_S30_metrics.json
+2026-03-30 14:23:28 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S30\group_b_rf_W300_S30_per_class.csv
+2026-03-30 14:23:29 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S30\group_b_rf_W300_S30_confusion.png
+2026-03-30 14:25:43 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:25:43 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:25:45 - src.models.classifier - INFO - Training completed in 1.69s
+2026-03-30 14:25:45 - src.models.classifier - INFO - Inference: total=0.018s, per_sample=0.6823ms
+2026-03-30 14:25:45 - src.evaluation.clf_metrics - INFO - Accuracy=0.9772  Macro-F1=0.8990  Weighted-F1=0.9777
+2026-03-30 14:25:45 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S30\group_b_xgb_W300_S30_metrics.json
+2026-03-30 14:25:45 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S30\group_b_xgb_W300_S30_per_class.csv
+2026-03-30 14:25:46 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S30\group_b_xgb_W300_S30_confusion.png
+2026-03-30 14:26:55 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:26:55 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:26:55 - src.models.classifier - INFO - Training completed in 0.32s
+2026-03-30 14:26:58 - src.models.classifier - INFO - Inference: total=0.029s, per_sample=26.8943ms
+2026-03-30 14:26:58 - src.evaluation.clf_metrics - INFO - Accuracy=0.9797  Macro-F1=0.9329  Weighted-F1=0.9795
+2026-03-30 14:26:58 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S60\group_b_rf_W300_S60_metrics.json
+2026-03-30 14:26:58 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S60\group_b_rf_W300_S60_per_class.csv
+2026-03-30 14:26:59 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S60\group_b_rf_W300_S60_confusion.png
+2026-03-30 14:28:07 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:28:07 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:28:08 - src.models.classifier - INFO - Training completed in 0.96s
+2026-03-30 14:28:08 - src.models.classifier - INFO - Inference: total=0.009s, per_sample=0.6684ms
+2026-03-30 14:28:08 - src.evaluation.clf_metrics - INFO - Accuracy=0.9785  Macro-F1=0.9223  Weighted-F1=0.9784
+2026-03-30 14:28:08 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S60\group_b_xgb_W300_S60_metrics.json
+2026-03-30 14:28:08 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S60\group_b_xgb_W300_S60_per_class.csv
+2026-03-30 14:28:09 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S60\group_b_xgb_W300_S60_confusion.png
+2026-03-30 14:28:40 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:28:40 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:28:40 - src.models.classifier - INFO - Training completed in 0.21s
+2026-03-30 14:28:42 - src.models.classifier - INFO - Inference: total=0.029s, per_sample=25.9728ms
+2026-03-30 14:28:42 - src.evaluation.clf_metrics - INFO - Accuracy=0.9782  Macro-F1=0.9416  Weighted-F1=0.9783
+2026-03-30 14:28:42 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S150\group_b_rf_W300_S150_metrics.json
+2026-03-30 14:28:42 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S150\group_b_rf_W300_S150_per_class.csv
+2026-03-30 14:28:43 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S150\group_b_rf_W300_S150_confusion.png
+2026-03-30 14:29:14 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:29:14 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:29:14 - src.models.classifier - INFO - Training completed in 0.60s
+2026-03-30 14:29:15 - src.models.classifier - INFO - Inference: total=0.004s, per_sample=0.6599ms
+2026-03-30 14:29:15 - src.evaluation.clf_metrics - INFO - Accuracy=0.9770  Macro-F1=0.9421  Weighted-F1=0.9770
+2026-03-30 14:29:15 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S150\group_b_xgb_W300_S150_metrics.json
+2026-03-30 14:29:15 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S150\group_b_xgb_W300_S150_per_class.csv
+2026-03-30 14:29:15 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S150\group_b_xgb_W300_S150_confusion.png
+2026-03-30 14:29:33 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:29:33 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:29:33 - src.models.classifier - INFO - Training completed in 0.18s
+2026-03-30 14:29:35 - src.models.classifier - INFO - Inference: total=0.030s, per_sample=26.9051ms
+2026-03-30 14:29:35 - src.evaluation.clf_metrics - INFO - Accuracy=0.9756  Macro-F1=0.9532  Weighted-F1=0.9731
+2026-03-30 14:29:35 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S300\group_b_rf_W300_S300_metrics.json
+2026-03-30 14:29:35 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S300\group_b_rf_W300_S300_per_class.csv
+2026-03-30 14:29:36 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_rf_W300_S300\group_b_rf_W300_S300_confusion.png
+2026-03-30 14:29:53 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:29:53 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:29:54 - src.models.classifier - INFO - Training completed in 0.51s
+2026-03-30 14:29:54 - src.models.classifier - INFO - Inference: total=0.002s, per_sample=0.7000ms
+2026-03-30 14:29:54 - src.evaluation.clf_metrics - INFO - Accuracy=0.9782  Macro-F1=0.9540  Weighted-F1=0.9773
+2026-03-30 14:29:54 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S300\group_b_xgb_W300_S300_metrics.json
+2026-03-30 14:29:54 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S300\group_b_xgb_W300_S300_per_class.csv
+2026-03-30 14:29:54 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_b_xgb_W300_S300\group_b_xgb_W300_S300_confusion.png
+2026-03-30 14:32:54 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:32:54 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:32:55 - src.models.classifier - INFO - Training completed in 1.48s
+2026-03-30 14:32:58 - src.models.classifier - INFO - Inference: total=0.063s, per_sample=29.1334ms
+2026-03-30 14:32:58 - src.evaluation.clf_metrics - INFO - Accuracy=0.9674  Macro-F1=0.8913  Weighted-F1=0.9634
+2026-03-30 14:32:58 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H10_L10\group_c_rf_H10_L10_metrics.json
+2026-03-30 14:32:58 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H10_L10\group_c_rf_H10_L10_per_class.csv
+2026-03-30 14:32:59 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H10_L10\group_c_rf_H10_L10_confusion.png
+2026-03-30 14:35:58 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:35:58 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:36:02 - src.models.classifier - INFO - Training completed in 3.80s
+2026-03-30 14:36:02 - src.models.classifier - INFO - Inference: total=0.058s, per_sample=0.8294ms
+2026-03-30 14:36:02 - src.evaluation.clf_metrics - INFO - Accuracy=0.9729  Macro-F1=0.9108  Weighted-F1=0.9712
+2026-03-30 14:36:02 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H10_L10\group_c_xgb_H10_L10_metrics.json
+2026-03-30 14:36:02 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H10_L10\group_c_xgb_H10_L10_per_class.csv
+2026-03-30 14:36:02 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H10_L10\group_c_xgb_H10_L10_confusion.png
+2026-03-30 14:37:06 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 14:37:08 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 14:37:08 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 14:37:15 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.3499, train_acc=0.8952, val_loss=0.1106, val_acc=0.9620
+2026-03-30 14:37:41 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0429, train_acc=0.9859, val_loss=0.0486, val_acc=0.9831
+2026-03-30 14:38:14 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0248, train_acc=0.9918, val_loss=0.0378, val_acc=0.9890
+2026-03-30 14:38:48 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0180, train_acc=0.9937, val_loss=0.0394, val_acc=0.9893
+2026-03-30 14:39:28 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0150, train_acc=0.9950, val_loss=0.0317, val_acc=0.9911
+2026-03-30 14:40:06 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0133, train_acc=0.9956, val_loss=0.0395, val_acc=0.9910
+2026-03-30 14:40:22 - src.models.rnn_classifier - INFO - Early stopping at epoch 27
+2026-03-30 14:40:22 - src.models.rnn_classifier - INFO - Training completed in 193.92s
+2026-03-30 14:40:22 - src.models.rnn_classifier - INFO - Best val_acc: 0.9906 at epoch 16
+2026-03-30 14:40:22 - src.evaluation.clf_metrics - INFO - Accuracy=0.9889  Macro-F1=0.9493  Weighted-F1=0.9889
+2026-03-30 14:40:22 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H10_L10\group_d_lstm_H10_L10_metrics.json
+2026-03-30 14:40:22 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H10_L10\group_d_lstm_H10_L10_per_class.csv
+2026-03-30 14:40:23 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H10_L10\group_d_lstm_H10_L10_confusion.png
+2026-03-30 14:41:34 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 14:41:34 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 14:41:34 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 14:41:47 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.3297, train_acc=0.9068, val_loss=0.1171, val_acc=0.9603
+2026-03-30 14:42:42 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0472, train_acc=0.9844, val_loss=0.0530, val_acc=0.9835
+2026-03-30 14:43:53 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0282, train_acc=0.9900, val_loss=0.0402, val_acc=0.9881
+2026-03-30 14:44:59 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0199, train_acc=0.9932, val_loss=0.0471, val_acc=0.9877
+2026-03-30 14:46:09 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0158, train_acc=0.9945, val_loss=0.0419, val_acc=0.9894
+2026-03-30 14:46:35 - src.models.rnn_classifier - INFO - Early stopping at epoch 22
+2026-03-30 14:46:35 - src.models.rnn_classifier - INFO - Training completed in 301.41s
+2026-03-30 14:46:35 - src.models.rnn_classifier - INFO - Best val_acc: 0.9884 at epoch 11
+2026-03-30 14:46:36 - src.evaluation.clf_metrics - INFO - Accuracy=0.9892  Macro-F1=0.9571  Weighted-F1=0.9891
+2026-03-30 14:46:36 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H10_L10\group_d_gru_H10_L10_metrics.json
+2026-03-30 14:46:36 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H10_L10\group_d_gru_H10_L10_per_class.csv
+2026-03-30 14:46:37 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H10_L10\group_d_gru_H10_L10_confusion.png
+2026-03-30 14:48:09 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 14:48:09 - src.models.classifier - INFO - Training rf model...
+2026-03-30 14:48:09 - src.models.classifier - INFO - Training completed in 0.80s
+2026-03-30 14:48:12 - src.models.classifier - INFO - Inference: total=0.042s, per_sample=26.7334ms
+2026-03-30 14:48:12 - src.evaluation.clf_metrics - INFO - Accuracy=0.9718  Macro-F1=0.8875  Weighted-F1=0.9683
+2026-03-30 14:48:12 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H20_L20\group_c_rf_H20_L20_metrics.json
+2026-03-30 14:48:12 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H20_L20\group_c_rf_H20_L20_per_class.csv
+2026-03-30 14:48:13 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H20_L20\group_c_rf_H20_L20_confusion.png
+2026-03-30 14:49:42 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 14:49:42 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 14:49:44 - src.models.classifier - INFO - Training completed in 2.01s
+2026-03-30 14:49:44 - src.models.classifier - INFO - Inference: total=0.025s, per_sample=0.7900ms
+2026-03-30 14:49:44 - src.evaluation.clf_metrics - INFO - Accuracy=0.9764  Macro-F1=0.9012  Weighted-F1=0.9753
+2026-03-30 14:49:44 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H20_L20\group_c_xgb_H20_L20_metrics.json
+2026-03-30 14:49:44 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H20_L20\group_c_xgb_H20_L20_per_class.csv
+2026-03-30 14:49:45 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H20_L20\group_c_xgb_H20_L20_confusion.png
+2026-03-30 14:50:25 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 14:50:25 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 14:50:25 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 14:50:30 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.5162, train_acc=0.8487, val_loss=0.1533, val_acc=0.9585
+2026-03-30 14:50:56 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0448, train_acc=0.9881, val_loss=0.0441, val_acc=0.9878
+2026-03-30 14:51:24 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0217, train_acc=0.9939, val_loss=0.0330, val_acc=0.9916
+2026-03-30 14:51:50 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0182, train_acc=0.9952, val_loss=0.0430, val_acc=0.9919
+2026-03-30 14:52:15 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0136, train_acc=0.9960, val_loss=0.0285, val_acc=0.9942
+2026-03-30 14:52:40 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0070, train_acc=0.9977, val_loss=0.0322, val_acc=0.9908
+2026-03-30 14:53:05 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0068, train_acc=0.9980, val_loss=0.0192, val_acc=0.9950
+2026-03-30 14:53:30 - src.models.rnn_classifier - INFO - Epoch 35/50: train_loss=0.0076, train_acc=0.9980, val_loss=0.0217, val_acc=0.9954
+2026-03-30 14:53:51 - src.models.rnn_classifier - INFO - Early stopping at epoch 39
+2026-03-30 14:53:51 - src.models.rnn_classifier - INFO - Training completed in 205.56s
+2026-03-30 14:53:51 - src.models.rnn_classifier - INFO - Best val_acc: 0.9939 at epoch 28
+2026-03-30 14:53:51 - src.evaluation.clf_metrics - INFO - Accuracy=0.9934  Macro-F1=0.9590  Weighted-F1=0.9933
+2026-03-30 14:53:51 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H20_L20\group_d_lstm_H20_L20_metrics.json
+2026-03-30 14:53:51 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H20_L20\group_d_lstm_H20_L20_per_class.csv
+2026-03-30 14:53:52 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H20_L20\group_d_lstm_H20_L20_confusion.png
+2026-03-30 14:54:31 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 14:54:31 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 14:54:31 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 14:54:43 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.4626, train_acc=0.8721, val_loss=0.1733, val_acc=0.9510
+2026-03-30 14:55:29 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0392, train_acc=0.9893, val_loss=0.0453, val_acc=0.9870
+2026-03-30 14:56:28 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0197, train_acc=0.9943, val_loss=0.0302, val_acc=0.9915
+2026-03-30 14:57:26 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0140, train_acc=0.9960, val_loss=0.0227, val_acc=0.9957
+2026-03-30 14:58:24 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0085, train_acc=0.9974, val_loss=0.0309, val_acc=0.9940
+2026-03-30 14:59:22 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0085, train_acc=0.9974, val_loss=0.0480, val_acc=0.9925
+2026-03-30 15:00:23 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0066, train_acc=0.9983, val_loss=0.0263, val_acc=0.9947
+2026-03-30 15:00:48 - src.models.rnn_classifier - INFO - Early stopping at epoch 32
+2026-03-30 15:00:48 - src.models.rnn_classifier - INFO - Training completed in 377.39s
+2026-03-30 15:00:48 - src.models.rnn_classifier - INFO - Best val_acc: 0.9950 at epoch 21
+2026-03-30 15:00:49 - src.evaluation.clf_metrics - INFO - Accuracy=0.9931  Macro-F1=0.9514  Weighted-F1=0.9932
+2026-03-30 15:00:49 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H20_L20\group_d_gru_H20_L20_metrics.json
+2026-03-30 15:00:49 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H20_L20\group_d_gru_H20_L20_per_class.csv
+2026-03-30 15:00:50 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H20_L20\group_d_gru_H20_L20_confusion.png
+2026-03-30 15:01:26 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 15:01:26 - src.models.classifier - INFO - Training rf model...
+2026-03-30 15:01:26 - src.models.classifier - INFO - Training completed in 0.35s
+2026-03-30 15:01:29 - src.models.classifier - INFO - Inference: total=0.040s, per_sample=24.8955ms
+2026-03-30 15:01:29 - src.evaluation.clf_metrics - INFO - Accuracy=0.9759  Macro-F1=0.8960  Weighted-F1=0.9739
+2026-03-30 15:01:29 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L50\group_c_rf_H50_L50_metrics.json
+2026-03-30 15:01:29 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L50\group_c_rf_H50_L50_per_class.csv
+2026-03-30 15:01:29 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L50\group_c_rf_H50_L50_confusion.png
+2026-03-30 15:02:04 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 15:02:04 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 15:02:05 - src.models.classifier - INFO - Training completed in 0.94s
+2026-03-30 15:02:05 - src.models.classifier - INFO - Inference: total=0.009s, per_sample=0.7257ms
+2026-03-30 15:02:05 - src.evaluation.clf_metrics - INFO - Accuracy=0.9790  Macro-F1=0.9118  Weighted-F1=0.9785
+2026-03-30 15:02:05 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L50\group_c_xgb_H50_L50_metrics.json
+2026-03-30 15:02:05 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L50\group_c_xgb_H50_L50_per_class.csv
+2026-03-30 15:02:06 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L50\group_c_xgb_H50_L50_confusion.png
+2026-03-30 15:02:25 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 15:02:25 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 15:02:25 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 15:02:28 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.8677, train_acc=0.7615, val_loss=0.4741, val_acc=0.8405
+2026-03-30 15:02:42 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.1312, train_acc=0.9638, val_loss=0.0926, val_acc=0.9709
+2026-03-30 15:03:00 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0646, train_acc=0.9854, val_loss=0.0659, val_acc=0.9755
+2026-03-30 15:03:19 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0300, train_acc=0.9922, val_loss=0.2109, val_acc=0.9641
+2026-03-30 15:03:38 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0343, train_acc=0.9922, val_loss=0.0501, val_acc=0.9916
+2026-03-30 15:03:58 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0162, train_acc=0.9960, val_loss=0.0228, val_acc=0.9954
+2026-03-30 15:04:17 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0084, train_acc=0.9980, val_loss=0.0034, val_acc=0.9989
+2026-03-30 15:04:37 - src.models.rnn_classifier - INFO - Epoch 35/50: train_loss=0.0329, train_acc=0.9931, val_loss=0.0314, val_acc=0.9927
+2026-03-30 15:04:53 - src.models.rnn_classifier - INFO - Early stopping at epoch 39
+2026-03-30 15:04:53 - src.models.rnn_classifier - INFO - Training completed in 147.98s
+2026-03-30 15:04:53 - src.models.rnn_classifier - INFO - Best val_acc: 0.9996 at epoch 28
+2026-03-30 15:04:53 - src.evaluation.clf_metrics - INFO - Accuracy=0.9958  Macro-F1=0.9659  Weighted-F1=0.9959
+2026-03-30 15:04:53 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L50\group_d_lstm_H50_L50_metrics.json
+2026-03-30 15:04:53 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L50\group_d_lstm_H50_L50_per_class.csv
+2026-03-30 15:04:53 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L50\group_d_lstm_H50_L50_confusion.png
+2026-03-30 15:05:12 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 15:05:12 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 15:05:12 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 15:05:23 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.7593, train_acc=0.8040, val_loss=0.2767, val_acc=0.9170
+2026-03-30 15:06:07 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0461, train_acc=0.9882, val_loss=0.0682, val_acc=0.9843
+2026-03-30 15:07:00 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0315, train_acc=0.9921, val_loss=0.0155, val_acc=0.9969
+2026-03-30 15:07:55 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0198, train_acc=0.9958, val_loss=0.0099, val_acc=0.9977
+2026-03-30 15:08:49 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0076, train_acc=0.9981, val_loss=0.0076, val_acc=0.9989
+2026-03-30 15:09:41 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0064, train_acc=0.9983, val_loss=0.0086, val_acc=0.9981
+2026-03-30 15:10:12 - src.models.rnn_classifier - INFO - Early stopping at epoch 28
+2026-03-30 15:10:12 - src.models.rnn_classifier - INFO - Training completed in 300.14s
+2026-03-30 15:10:12 - src.models.rnn_classifier - INFO - Best val_acc: 0.9985 at epoch 17
+2026-03-30 15:10:13 - src.evaluation.clf_metrics - INFO - Accuracy=0.9931  Macro-F1=0.9632  Weighted-F1=0.9930
+2026-03-30 15:10:13 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L50\group_d_gru_H50_L50_metrics.json
+2026-03-30 15:10:13 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L50\group_d_gru_H50_L50_per_class.csv
+2026-03-30 15:10:13 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L50\group_d_gru_H50_L50_confusion.png
+2026-03-30 15:15:55 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 15:15:55 - src.models.classifier - INFO - Training rf model...
+2026-03-30 15:15:58 - src.models.classifier - INFO - Training completed in 3.57s
+2026-03-30 15:16:01 - src.models.classifier - INFO - Inference: total=0.120s, per_sample=22.0824ms
+2026-03-30 15:16:01 - src.evaluation.clf_metrics - INFO - Accuracy=0.9847  Macro-F1=0.9200  Weighted-F1=0.9842
+2026-03-30 15:16:01 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L5\group_c_rf_H50_L5_metrics.json
+2026-03-30 15:16:01 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L5\group_c_rf_H50_L5_per_class.csv
+2026-03-30 15:16:01 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L5\group_c_rf_H50_L5_confusion.png
+2026-03-30 15:21:27 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 15:21:27 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 15:21:33 - src.models.classifier - INFO - Training completed in 6.19s
+2026-03-30 15:21:33 - src.models.classifier - INFO - Inference: total=0.082s, per_sample=0.7940ms
+2026-03-30 15:21:33 - src.evaluation.clf_metrics - INFO - Accuracy=0.9842  Macro-F1=0.9232  Weighted-F1=0.9837
+2026-03-30 15:21:33 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L5\group_c_xgb_H50_L5_metrics.json
+2026-03-30 15:21:33 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L5\group_c_xgb_H50_L5_per_class.csv
+2026-03-30 15:21:33 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L5\group_c_xgb_H50_L5_confusion.png
+2026-03-30 15:23:49 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 15:23:49 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 15:23:49 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 15:24:20 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.1991, train_acc=0.9439, val_loss=0.0559, val_acc=0.9850
+2026-03-30 15:26:43 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0101, train_acc=0.9978, val_loss=0.0147, val_acc=0.9969
+2026-03-30 15:30:09 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0050, train_acc=0.9989, val_loss=0.0178, val_acc=0.9982
+2026-03-30 15:33:33 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0040, train_acc=0.9990, val_loss=0.0142, val_acc=0.9982
+2026-03-30 15:37:12 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0054, train_acc=0.9991, val_loss=0.0120, val_acc=0.9987
+2026-03-30 15:41:06 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0053, train_acc=0.9993, val_loss=0.0046, val_acc=0.9990
+2026-03-30 15:44:41 - src.models.rnn_classifier - INFO - Early stopping at epoch 28
+2026-03-30 15:44:41 - src.models.rnn_classifier - INFO - Training completed in 1252.03s
+2026-03-30 15:44:41 - src.models.rnn_classifier - INFO - Best val_acc: 0.9993 at epoch 17
+2026-03-30 15:44:43 - src.evaluation.clf_metrics - INFO - Accuracy=0.9985  Macro-F1=0.9904  Weighted-F1=0.9985
+2026-03-30 15:44:43 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L5\group_d_lstm_H50_L5_metrics.json
+2026-03-30 15:44:43 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L5\group_d_lstm_H50_L5_per_class.csv
+2026-03-30 15:44:44 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L5\group_d_lstm_H50_L5_confusion.png
+2026-03-30 15:47:25 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 15:47:25 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 15:47:25 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 15:49:11 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.1409, train_acc=0.9620, val_loss=0.0140, val_acc=0.9955
+2026-03-30 15:56:23 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0083, train_acc=0.9980, val_loss=0.0052, val_acc=0.9992
+2026-03-30 16:05:28 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0033, train_acc=0.9990, val_loss=0.0099, val_acc=0.9985
+2026-03-30 16:14:16 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0031, train_acc=0.9993, val_loss=0.0125, val_acc=0.9984
+2026-03-30 16:23:06 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0019, train_acc=0.9996, val_loss=0.0030, val_acc=0.9995
+2026-03-30 16:30:24 - src.models.rnn_classifier - INFO - Early stopping at epoch 24
+2026-03-30 16:30:24 - src.models.rnn_classifier - INFO - Training completed in 2578.99s
+2026-03-30 16:30:24 - src.models.rnn_classifier - INFO - Best val_acc: 0.9998 at epoch 13
+2026-03-30 16:30:30 - src.evaluation.clf_metrics - INFO - Accuracy=0.9973  Macro-F1=0.9879  Weighted-F1=0.9972
+2026-03-30 16:30:30 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L5\group_d_gru_H50_L5_metrics.json
+2026-03-30 16:30:30 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L5\group_d_gru_H50_L5_per_class.csv
+2026-03-30 16:30:30 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L5\group_d_gru_H50_L5_confusion.png
+2026-03-30 16:33:11 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 16:33:11 - src.models.classifier - INFO - Training rf model...
+2026-03-30 16:33:13 - src.models.classifier - INFO - Training completed in 1.64s
+2026-03-30 16:33:16 - src.models.classifier - INFO - Inference: total=0.063s, per_sample=30.0481ms
+2026-03-30 16:33:16 - src.evaluation.clf_metrics - INFO - Accuracy=0.9844  Macro-F1=0.9205  Weighted-F1=0.9837
+2026-03-30 16:33:16 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L10\group_c_rf_H50_L10_metrics.json
+2026-03-30 16:33:16 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L10\group_c_rf_H50_L10_per_class.csv
+2026-03-30 16:33:17 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L10\group_c_rf_H50_L10_confusion.png
+2026-03-30 16:36:23 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 16:36:23 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 16:36:26 - src.models.classifier - INFO - Training completed in 3.28s
+2026-03-30 16:36:26 - src.models.classifier - INFO - Inference: total=0.049s, per_sample=1.0191ms
+2026-03-30 16:36:26 - src.evaluation.clf_metrics - INFO - Accuracy=0.9833  Macro-F1=0.9190  Weighted-F1=0.9827
+2026-03-30 16:36:26 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L10\group_c_xgb_H50_L10_metrics.json
+2026-03-30 16:36:26 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L10\group_c_xgb_H50_L10_per_class.csv
+2026-03-30 16:36:27 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L10\group_c_xgb_H50_L10_confusion.png
+2026-03-30 16:37:54 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 16:37:54 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 16:37:54 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 16:38:13 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.3650, train_acc=0.8916, val_loss=0.0792, val_acc=0.9756
+2026-03-30 16:39:33 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0285, train_acc=0.9940, val_loss=0.0168, val_acc=0.9960
+2026-03-30 16:41:04 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0140, train_acc=0.9967, val_loss=0.0195, val_acc=0.9959
+2026-03-30 16:42:36 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0054, train_acc=0.9987, val_loss=0.0092, val_acc=0.9977
+2026-03-30 16:44:07 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0070, train_acc=0.9986, val_loss=0.0107, val_acc=0.9981
+2026-03-30 16:45:38 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0051, train_acc=0.9989, val_loss=0.0031, val_acc=0.9991
+2026-03-30 16:47:09 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0051, train_acc=0.9992, val_loss=0.0065, val_acc=0.9983
+2026-03-30 16:48:39 - src.models.rnn_classifier - INFO - Epoch 35/50: train_loss=0.0017, train_acc=0.9995, val_loss=0.0037, val_acc=0.9992
+2026-03-30 16:48:39 - src.models.rnn_classifier - INFO - Early stopping at epoch 35
+2026-03-30 16:48:39 - src.models.rnn_classifier - INFO - Training completed in 644.80s
+2026-03-30 16:48:39 - src.models.rnn_classifier - INFO - Best val_acc: 0.9991 at epoch 24
+2026-03-30 16:48:40 - src.evaluation.clf_metrics - INFO - Accuracy=0.9994  Macro-F1=0.9973  Weighted-F1=0.9994
+2026-03-30 16:48:40 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L10\group_d_lstm_H50_L10_metrics.json
+2026-03-30 16:48:40 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L10\group_d_lstm_H50_L10_per_class.csv
+2026-03-30 16:48:40 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L10\group_d_lstm_H50_L10_confusion.png
+2026-03-30 16:49:52 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 16:49:52 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 16:49:52 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 16:50:48 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.2596, train_acc=0.9281, val_loss=0.0284, val_acc=0.9930
+2026-03-30 16:54:17 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0136, train_acc=0.9965, val_loss=0.0040, val_acc=0.9985
+2026-03-30 16:58:06 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0072, train_acc=0.9982, val_loss=0.0062, val_acc=0.9985
+2026-03-30 17:01:46 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0050, train_acc=0.9986, val_loss=0.0048, val_acc=0.9989
+2026-03-30 17:05:34 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0024, train_acc=0.9992, val_loss=0.0072, val_acc=0.9989
+2026-03-30 17:09:16 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0033, train_acc=0.9991, val_loss=0.0083, val_acc=0.9985
+2026-03-30 17:13:04 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0016, train_acc=0.9994, val_loss=0.0041, val_acc=0.9992
+2026-03-30 17:17:11 - src.models.rnn_classifier - INFO - Epoch 35/50: train_loss=0.0024, train_acc=0.9992, val_loss=0.0025, val_acc=0.9992
+2026-03-30 17:19:43 - src.models.rnn_classifier - INFO - Early stopping at epoch 38
+2026-03-30 17:19:43 - src.models.rnn_classifier - INFO - Training completed in 1790.09s
+2026-03-30 17:19:43 - src.models.rnn_classifier - INFO - Best val_acc: 0.9997 at epoch 27
+2026-03-30 17:19:45 - src.evaluation.clf_metrics - INFO - Accuracy=0.9992  Macro-F1=0.9929  Weighted-F1=0.9992
+2026-03-30 17:19:45 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L10\group_d_gru_H50_L10_metrics.json
+2026-03-30 17:19:45 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L10\group_d_gru_H50_L10_per_class.csv
+2026-03-30 17:19:46 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L10\group_d_gru_H50_L10_confusion.png
+2026-03-30 17:20:59 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 17:20:59 - src.models.classifier - INFO - Training rf model...
+2026-03-30 17:21:00 - src.models.classifier - INFO - Training completed in 0.80s
+2026-03-30 17:21:02 - src.models.classifier - INFO - Inference: total=0.041s, per_sample=20.4845ms
+2026-03-30 17:21:02 - src.evaluation.clf_metrics - INFO - Accuracy=0.9821  Macro-F1=0.9122  Weighted-F1=0.9812
+2026-03-30 17:21:02 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L20\group_c_rf_H50_L20_metrics.json
+2026-03-30 17:21:02 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L20\group_c_rf_H50_L20_per_class.csv
+2026-03-30 17:21:03 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L20\group_c_rf_H50_L20_confusion.png
+2026-03-30 17:22:17 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 17:22:17 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 17:22:19 - src.models.classifier - INFO - Training completed in 1.56s
+2026-03-30 17:22:19 - src.models.classifier - INFO - Inference: total=0.022s, per_sample=0.7655ms
+2026-03-30 17:22:19 - src.evaluation.clf_metrics - INFO - Accuracy=0.9819  Macro-F1=0.9237  Weighted-F1=0.9814
+2026-03-30 17:22:19 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L20\group_c_xgb_H50_L20_metrics.json
+2026-03-30 17:22:19 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L20\group_c_xgb_H50_L20_per_class.csv
+2026-03-30 17:22:19 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L20\group_c_xgb_H50_L20_confusion.png
+2026-03-30 17:22:54 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 17:22:54 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 17:22:54 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 17:23:02 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.5458, train_acc=0.8397, val_loss=0.1529, val_acc=0.9492
+2026-03-30 17:23:33 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0369, train_acc=0.9915, val_loss=0.0328, val_acc=0.9917
+2026-03-30 17:24:12 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0276, train_acc=0.9942, val_loss=0.0245, val_acc=0.9959
+2026-03-30 17:24:51 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0085, train_acc=0.9974, val_loss=0.0062, val_acc=0.9983
+2026-03-30 17:25:31 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0068, train_acc=0.9980, val_loss=0.0131, val_acc=0.9974
+2026-03-30 17:25:39 - src.models.rnn_classifier - INFO - Early stopping at epoch 21
+2026-03-30 17:25:39 - src.models.rnn_classifier - INFO - Training completed in 164.57s
+2026-03-30 17:25:39 - src.models.rnn_classifier - INFO - Best val_acc: 0.9985 at epoch 10
+2026-03-30 17:25:39 - src.evaluation.clf_metrics - INFO - Accuracy=0.9977  Macro-F1=0.9793  Weighted-F1=0.9977
+2026-03-30 17:25:39 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L20\group_d_lstm_H50_L20_metrics.json
+2026-03-30 17:25:39 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L20\group_d_lstm_H50_L20_per_class.csv
+2026-03-30 17:25:39 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L20\group_d_lstm_H50_L20_confusion.png
+2026-03-30 17:26:14 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 17:26:14 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 17:26:14 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 17:26:34 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.4268, train_acc=0.8822, val_loss=0.1094, val_acc=0.9703
+2026-03-30 17:27:57 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0234, train_acc=0.9939, val_loss=0.0184, val_acc=0.9957
+2026-03-30 17:29:42 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0156, train_acc=0.9961, val_loss=0.0061, val_acc=0.9982
+2026-03-30 17:31:28 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0065, train_acc=0.9984, val_loss=0.0099, val_acc=0.9976
+2026-03-30 17:33:11 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0107, train_acc=0.9976, val_loss=0.0076, val_acc=0.9982
+2026-03-30 17:34:55 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0057, train_acc=0.9987, val_loss=0.0093, val_acc=0.9982
+2026-03-30 17:35:16 - src.models.rnn_classifier - INFO - Early stopping at epoch 26
+2026-03-30 17:35:16 - src.models.rnn_classifier - INFO - Training completed in 541.62s
+2026-03-30 17:35:16 - src.models.rnn_classifier - INFO - Best val_acc: 0.9994 at epoch 15
+2026-03-30 17:35:17 - src.evaluation.clf_metrics - INFO - Accuracy=0.9979  Macro-F1=0.9851  Weighted-F1=0.9979
+2026-03-30 17:35:17 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L20\group_d_gru_H50_L20_metrics.json
+2026-03-30 17:35:17 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L20\group_d_gru_H50_L20_per_class.csv
+2026-03-30 17:35:17 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L20\group_d_gru_H50_L20_confusion.png
+2026-03-30 17:36:11 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 17:36:11 - src.models.classifier - INFO - Training rf model...
+2026-03-30 17:36:11 - src.models.classifier - INFO - Training completed in 0.63s
+2026-03-30 17:36:13 - src.models.classifier - INFO - Inference: total=0.041s, per_sample=19.0307ms
+2026-03-30 17:36:13 - src.evaluation.clf_metrics - INFO - Accuracy=0.9786  Macro-F1=0.9087  Weighted-F1=0.9780
+2026-03-30 17:36:13 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L25\group_c_rf_H50_L25_metrics.json
+2026-03-30 17:36:13 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L25\group_c_rf_H50_L25_per_class.csv
+2026-03-30 17:36:14 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L25\group_c_rf_H50_L25_confusion.png
+2026-03-30 17:37:08 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 17:37:08 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 17:37:09 - src.models.classifier - INFO - Training completed in 1.07s
+2026-03-30 17:37:09 - src.models.classifier - INFO - Inference: total=0.011s, per_sample=0.7553ms
+2026-03-30 17:37:09 - src.evaluation.clf_metrics - INFO - Accuracy=0.9830  Macro-F1=0.9255  Weighted-F1=0.9819
+2026-03-30 17:37:09 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L25\group_c_xgb_H50_L25_metrics.json
+2026-03-30 17:37:09 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L25\group_c_xgb_H50_L25_per_class.csv
+2026-03-30 17:37:09 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L25\group_c_xgb_H50_L25_confusion.png
+2026-03-30 17:37:37 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 17:37:37 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 17:37:37 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 17:37:43 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.5502, train_acc=0.8513, val_loss=0.1493, val_acc=0.9579
+2026-03-30 17:38:08 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0744, train_acc=0.9833, val_loss=0.0252, val_acc=0.9923
+2026-03-30 17:38:40 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0220, train_acc=0.9946, val_loss=0.0260, val_acc=0.9935
+2026-03-30 17:39:14 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0186, train_acc=0.9958, val_loss=0.0131, val_acc=0.9962
+2026-03-30 17:39:45 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0091, train_acc=0.9980, val_loss=0.0068, val_acc=0.9981
+2026-03-30 17:40:17 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0084, train_acc=0.9978, val_loss=0.0101, val_acc=0.9977
+2026-03-30 17:40:48 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0031, train_acc=0.9989, val_loss=0.0063, val_acc=0.9985
+2026-03-30 17:41:01 - src.models.rnn_classifier - INFO - Early stopping at epoch 32
+2026-03-30 17:41:01 - src.models.rnn_classifier - INFO - Training completed in 204.23s
+2026-03-30 17:41:01 - src.models.rnn_classifier - INFO - Best val_acc: 0.9994 at epoch 21
+2026-03-30 17:41:01 - src.evaluation.clf_metrics - INFO - Accuracy=0.9975  Macro-F1=0.9813  Weighted-F1=0.9975
+2026-03-30 17:41:01 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L25\group_d_lstm_H50_L25_metrics.json
+2026-03-30 17:41:01 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L25\group_d_lstm_H50_L25_per_class.csv
+2026-03-30 17:41:02 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L25\group_d_lstm_H50_L25_confusion.png
+2026-03-30 17:41:29 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 17:41:29 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 17:41:29 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 17:41:45 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.4836, train_acc=0.8722, val_loss=0.1100, val_acc=0.9682
+2026-03-30 17:42:51 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0352, train_acc=0.9906, val_loss=0.0155, val_acc=0.9956
+2026-03-30 17:44:14 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0162, train_acc=0.9960, val_loss=0.0182, val_acc=0.9950
+2026-03-30 17:45:37 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0103, train_acc=0.9973, val_loss=0.0143, val_acc=0.9966
+2026-03-30 17:46:59 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0109, train_acc=0.9972, val_loss=0.0112, val_acc=0.9981
+2026-03-30 17:48:20 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0041, train_acc=0.9986, val_loss=0.0150, val_acc=0.9969
+2026-03-30 17:49:42 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0044, train_acc=0.9987, val_loss=0.0157, val_acc=0.9969
+2026-03-30 17:51:02 - src.models.rnn_classifier - INFO - Epoch 35/50: train_loss=0.0095, train_acc=0.9980, val_loss=0.0057, val_acc=0.9990
+2026-03-30 17:51:19 - src.models.rnn_classifier - INFO - Early stopping at epoch 36
+2026-03-30 17:51:19 - src.models.rnn_classifier - INFO - Training completed in 590.17s
+2026-03-30 17:51:19 - src.models.rnn_classifier - INFO - Best val_acc: 0.9985 at epoch 25
+2026-03-30 17:51:21 - src.evaluation.clf_metrics - INFO - Accuracy=0.9975  Macro-F1=0.9680  Weighted-F1=0.9978
+2026-03-30 17:51:21 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L25\group_d_gru_H50_L25_metrics.json
+2026-03-30 17:51:21 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L25\group_d_gru_H50_L25_per_class.csv
+2026-03-30 17:51:21 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L25\group_d_gru_H50_L25_confusion.png
+2026-03-30 17:51:50 - src.models.classifier - INFO - Initialized rf classifier
+2026-03-30 17:51:50 - src.models.classifier - INFO - Training rf model...
+2026-03-30 17:51:50 - src.models.classifier - INFO - Training completed in 0.33s
+2026-03-30 17:51:52 - src.models.classifier - INFO - Inference: total=0.039s, per_sample=18.7726ms
+2026-03-30 17:51:52 - src.evaluation.clf_metrics - INFO - Accuracy=0.9759  Macro-F1=0.8960  Weighted-F1=0.9739
+2026-03-30 17:51:52 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L50\group_c_rf_H50_L50_metrics.json
+2026-03-30 17:51:52 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L50\group_c_rf_H50_L50_per_class.csv
+2026-03-30 17:51:52 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_rf_H50_L50\group_c_rf_H50_L50_confusion.png
+2026-03-30 17:52:21 - src.models.classifier - INFO - Initialized xgb classifier
+2026-03-30 17:52:21 - src.models.classifier - INFO - Training xgb model...
+2026-03-30 17:52:22 - src.models.classifier - INFO - Training completed in 0.70s
+2026-03-30 17:52:22 - src.models.classifier - INFO - Inference: total=0.009s, per_sample=0.7294ms
+2026-03-30 17:52:22 - src.evaluation.clf_metrics - INFO - Accuracy=0.9790  Macro-F1=0.9118  Weighted-F1=0.9785
+2026-03-30 17:52:22 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L50\group_c_xgb_H50_L50_metrics.json
+2026-03-30 17:52:22 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L50\group_c_xgb_H50_L50_per_class.csv
+2026-03-30 17:52:22 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_c_xgb_H50_L50\group_c_xgb_H50_L50_confusion.png
+2026-03-30 17:52:38 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 17:52:38 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 17:52:38 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 17:52:41 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.8590, train_acc=0.7520, val_loss=0.3599, val_acc=0.8822
+2026-03-30 17:52:53 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.1223, train_acc=0.9679, val_loss=0.0756, val_acc=0.9805
+2026-03-30 17:53:09 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0535, train_acc=0.9869, val_loss=0.0860, val_acc=0.9782
+2026-03-30 17:53:24 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0206, train_acc=0.9946, val_loss=0.0644, val_acc=0.9912
+2026-03-30 17:53:40 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0256, train_acc=0.9939, val_loss=0.0757, val_acc=0.9820
+2026-03-30 17:53:46 - src.models.rnn_classifier - INFO - Early stopping at epoch 22
+2026-03-30 17:53:46 - src.models.rnn_classifier - INFO - Training completed in 68.53s
+2026-03-30 17:53:46 - src.models.rnn_classifier - INFO - Best val_acc: 0.9927 at epoch 11
+2026-03-30 17:53:46 - src.evaluation.clf_metrics - INFO - Accuracy=0.9889  Macro-F1=0.9418  Weighted-F1=0.9888
+2026-03-30 17:53:46 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L50\group_d_lstm_H50_L50_metrics.json
+2026-03-30 17:53:46 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L50\group_d_lstm_H50_L50_per_class.csv
+2026-03-30 17:53:47 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_lstm_H50_L50\group_d_lstm_H50_L50_confusion.png
+2026-03-30 17:54:02 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-03-30 17:54:02 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-03-30 17:54:02 - src.models.rnn_classifier - INFO - Starting training: max_epochs=50, patience=10
+2026-03-30 17:54:10 - src.models.rnn_classifier - INFO - Epoch 1/50: train_loss=0.7869, train_acc=0.7883, val_loss=0.2240, val_acc=0.9476
+2026-03-30 17:54:43 - src.models.rnn_classifier - INFO - Epoch 5/50: train_loss=0.0589, train_acc=0.9857, val_loss=0.0265, val_acc=0.9946
+2026-03-30 17:55:23 - src.models.rnn_classifier - INFO - Epoch 10/50: train_loss=0.0365, train_acc=0.9926, val_loss=0.0138, val_acc=0.9962
+2026-03-30 17:56:04 - src.models.rnn_classifier - INFO - Epoch 15/50: train_loss=0.0126, train_acc=0.9965, val_loss=0.0062, val_acc=0.9989
+2026-03-30 17:56:45 - src.models.rnn_classifier - INFO - Epoch 20/50: train_loss=0.0093, train_acc=0.9978, val_loss=0.0145, val_acc=0.9981
+2026-03-30 17:57:27 - src.models.rnn_classifier - INFO - Epoch 25/50: train_loss=0.0127, train_acc=0.9967, val_loss=0.0070, val_acc=0.9985
+2026-03-30 17:58:08 - src.models.rnn_classifier - INFO - Epoch 30/50: train_loss=0.0046, train_acc=0.9991, val_loss=0.0082, val_acc=0.9981
+2026-03-30 17:58:50 - src.models.rnn_classifier - INFO - Epoch 35/50: train_loss=0.0033, train_acc=0.9989, val_loss=0.0050, val_acc=0.9985
+2026-03-30 17:59:31 - src.models.rnn_classifier - INFO - Epoch 40/50: train_loss=0.0054, train_acc=0.9986, val_loss=0.0167, val_acc=0.9966
+2026-03-30 18:00:12 - src.models.rnn_classifier - INFO - Epoch 45/50: train_loss=0.0126, train_acc=0.9969, val_loss=0.0235, val_acc=0.9962
+2026-03-30 18:00:53 - src.models.rnn_classifier - INFO - Epoch 50/50: train_loss=0.0026, train_acc=0.9989, val_loss=0.0066, val_acc=0.9985
+2026-03-30 18:00:53 - src.models.rnn_classifier - INFO - Training completed in 411.12s
+2026-03-30 18:00:53 - src.models.rnn_classifier - INFO - Best val_acc: 0.9992 at epoch 42
+2026-03-30 18:00:54 - src.evaluation.clf_metrics - INFO - Accuracy=0.9966  Macro-F1=0.9679  Weighted-F1=0.9968
+2026-03-30 18:00:54 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L50\group_d_gru_H50_L50_metrics.json
+2026-03-30 18:00:54 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L50\group_d_gru_H50_L50_per_class.csv
+2026-03-30 18:00:54 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_d_gru_H50_L50\group_d_gru_H50_L50_confusion.png

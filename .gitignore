@@ -1,0 +1,15 @@
+data/
+
+*.npy
+*.pcap
+*.pkl
+*.pt
+*.pth
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.idea/
+.vscode/
