@@ -1,0 +1,16 @@
+2026-04-08 14:31:45 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 14:31:45 - src.models.classifier - INFO - Training rf model...
+2026-04-08 14:31:47 - src.models.classifier - INFO - Training completed in 2.44s
+2026-04-08 14:31:49 - src.models.classifier - INFO - Inference: total=0.196s, per_sample=17.1181ms
+2026-04-08 14:31:49 - src.evaluation.clf_metrics - INFO - Accuracy=0.9297  Macro-F1=0.9050  Weighted-F1=0.9284
+2026-04-08 14:31:49 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W10\group_e_rf_S5_W10_metrics.json
+2026-04-08 14:31:49 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W10\group_e_rf_S5_W10_per_class.csv
+2026-04-08 14:31:50 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W10\group_e_rf_S5_W10_confusion.png
+2026-04-08 14:37:22 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 14:37:22 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 14:37:38 - src.models.classifier - INFO - Training completed in 15.40s
+2026-04-08 14:37:38 - src.models.classifier - INFO - Inference: total=0.169s, per_sample=0.7095ms
+2026-04-08 14:37:38 - src.evaluation.clf_metrics - INFO - Accuracy=0.9176  Macro-F1=0.8733  Weighted-F1=0.9184
+2026-04-08 14:37:38 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W10\group_e_xgb_S5_W10_metrics.json
+2026-04-08 14:37:38 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W10\group_e_xgb_S5_W10_per_class.csv
+2026-04-08 14:37:39 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W10\group_e_xgb_S5_W10_confusion.png

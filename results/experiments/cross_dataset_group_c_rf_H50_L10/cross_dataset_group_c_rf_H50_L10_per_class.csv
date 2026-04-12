@@ -1,0 +1,15 @@
+device,precision,recall,f1
+Amazon Echo,0.0,0.0,0.0
+Belkin wemo motion sensor,0.0,0.0,0.0
+Dropcam,0.0,0.0,0.0
+HP Printer,0.1958762886597938,0.9090909090909091,0.32230703986429177
+Laptop,0.0,0.0,0.0
+Netatmo Welcome,0.017204301075268817,0.07894736842105263,0.028251912889935255
+Netatmo weather station,0.0,0.0,0.0
+PIX-STAR Photo-frame,0.0,0.0,0.0
+Samsung Galaxy Tab,0.0,0.0,0.0
+Samsung SmartCam,0.0,0.0,0.0
+TP-Link Day Night Cloud camera,0.0,0.0,0.0
+TP-Link Smart plug,0.0,0.0,0.0
+TPLink Router Bridge LAN,0.0,0.0,0.0
+Withings Smart Baby Monitor,0.0,0.0,0.0

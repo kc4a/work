@@ -1,0 +1,32 @@
+2026-04-09 13:05:26 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-09 13:05:26 - src.models.classifier - INFO - Training rf model...
+2026-04-09 13:05:28 - src.models.classifier - INFO - Training completed in 2.42s
+2026-04-09 13:05:29 - src.models.classifier - INFO - Inference: total=0.261s, per_sample=4.6860ms
+2026-04-09 13:05:29 - src.evaluation.clf_metrics - INFO - Accuracy=0.1409  Macro-F1=0.0406  Weighted-F1=0.0406
+2026-04-09 13:05:29 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e_rf_S10_W30\cross_dataset_group_e_rf_S10_W30_metrics.json
+2026-04-09 13:05:29 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e_rf_S10_W30\cross_dataset_group_e_rf_S10_W30_per_class.csv
+2026-04-09 13:05:29 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e_rf_S10_W30\cross_dataset_group_e_rf_S10_W30_confusion.png
+2026-04-09 13:07:40 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-09 13:07:40 - src.models.classifier - INFO - Training xgb model...
+2026-04-09 13:07:44 - src.models.classifier - INFO - Training completed in 3.62s
+2026-04-09 13:07:44 - src.models.classifier - INFO - Inference: total=0.279s, per_sample=0.4449ms
+2026-04-09 13:07:44 - src.evaluation.clf_metrics - INFO - Accuracy=0.2056  Macro-F1=0.1377  Weighted-F1=0.1377
+2026-04-09 13:07:44 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e_xgb_S10_W30\cross_dataset_group_e_xgb_S10_W30_metrics.json
+2026-04-09 13:07:44 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e_xgb_S10_W30\cross_dataset_group_e_xgb_S10_W30_per_class.csv
+2026-04-09 13:07:44 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e_xgb_S10_W30\cross_dataset_group_e_xgb_S10_W30_confusion.png
+2026-04-09 13:08:19 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-09 13:08:19 - src.models.classifier - INFO - Training rf model...
+2026-04-09 13:08:19 - src.models.classifier - INFO - Training completed in 0.84s
+2026-04-09 13:08:20 - src.models.classifier - INFO - Inference: total=0.027s, per_sample=4.7011ms
+2026-04-09 13:08:20 - src.evaluation.clf_metrics - INFO - Accuracy=0.1179  Macro-F1=0.0417  Weighted-F1=0.0307
+2026-04-09 13:08:20 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e1_rf_S10_W30\cross_dataset_group_e1_rf_S10_W30_metrics.json
+2026-04-09 13:08:20 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e1_rf_S10_W30\cross_dataset_group_e1_rf_S10_W30_per_class.csv
+2026-04-09 13:08:20 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e1_rf_S10_W30\cross_dataset_group_e1_rf_S10_W30_confusion.png
+2026-04-09 13:08:54 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-09 13:08:54 - src.models.classifier - INFO - Training xgb model...
+2026-04-09 13:08:54 - src.models.classifier - INFO - Training completed in 0.75s
+2026-04-09 13:08:54 - src.models.classifier - INFO - Inference: total=0.026s, per_sample=0.4134ms
+2026-04-09 13:08:54 - src.evaluation.clf_metrics - INFO - Accuracy=0.1653  Macro-F1=0.1256  Weighted-F1=0.0818
+2026-04-09 13:08:54 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e1_xgb_S10_W30\cross_dataset_group_e1_xgb_S10_W30_metrics.json
+2026-04-09 13:08:54 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e1_xgb_S10_W30\cross_dataset_group_e1_xgb_S10_W30_per_class.csv
+2026-04-09 13:08:55 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_e1_xgb_S10_W30\cross_dataset_group_e1_xgb_S10_W30_confusion.png

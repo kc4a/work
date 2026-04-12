@@ -4,6 +4,7 @@ Group A: 单包级 + ML
 Group B: 窗口级 + ML
 Group C: 序列压缩 + ML
 Group D: 原始序列 + RNN
+Group E: 混合粒度（单包 + 历史窗口） + ML
 + 参数敏感性分析 + 特征重要性分析
 """
 import os
@@ -22,6 +23,8 @@ from src.utils.config import (
     RESULTS_DIR, RANDOM_STATE,
     WINDOW_SIZES, WINDOW_STEPS, DEFAULT_WINDOW_SIZE, DEFAULT_WINDOW_STEP,
     SEQ_LENGTHS, SEQ_STEPS, DEFAULT_SEQ_LENGTH, DEFAULT_SEQ_STEP,
+    GROUP_E_SAMPLE_STEPS, GROUP_E_HIST_WINDOWS,
+    DEFAULT_GROUP_E_SAMPLE_STEP, DEFAULT_GROUP_E_HIST_WINDOW,
     RNN_HIDDEN_SIZE, RNN_NUM_LAYERS, RNN_DROPOUT, RNN_BATCH_SIZE,
     RNN_LEARNING_RATE, RNN_EPOCHS, RNN_PATIENCE, DEVICE,
 )
@@ -29,6 +32,8 @@ from src.preprocessing.pcap_loader import parse_pcap_to_packet_csv
 from src.preprocessing.packet_level_loader import GroupALoader
 from src.preprocessing.window_loader import GroupBLoader
 from src.preprocessing.sequence_loader import GroupCLoader, GroupDLoader
+from src.preprocessing.group_e_loader import GroupELoader
+from src.preprocessing.group_e1_loader import GroupE1Loader
 from src.models.classifier import IoTClassifier
 from src.models.rnn_classifier import (
     IoTRNNClassifier, RNNTrainer, create_dataloaders,
@@ -228,6 +233,84 @@ def run_group_d(rnn_type="lstm", seq_length=DEFAULT_SEQ_LENGTH,
 
 
 # ═══════════════════════════════════════════════════
+# Group E
+# ═══════════════════════════════════════════════════
+
+def run_group_e(model_type="rf",
+                sample_step=DEFAULT_GROUP_E_SAMPLE_STEP,
+                hist_window=DEFAULT_GROUP_E_HIST_WINDOW):
+    tag = f"group_e_{model_type}_S{sample_step}_W{hist_window}"
+    logger.info("=== %s ===", tag)
+
+    loader = GroupELoader()
+    X_train, y_train, X_val, y_val, X_test, y_test, info = loader.load(
+        sample_step=sample_step, hist_window=hist_window,
+    )
+    feat_time = info["feature_construction_time"]
+
+    clf = IoTClassifier(model_type)
+    clf.train(X_train, y_train)
+    y_pred = clf.predict(X_test)
+
+    time_costs = {
+        "feature_construction_time": feat_time,
+        "train_time": clf.train_time,
+        "inference_time_total": clf.inference_time_total,
+        "inference_time_per_sample": clf.inference_time_per_sample,
+    }
+
+    inv_map = {v: k for k, v in info["label_map"].items()}
+    metrics = compute_metrics(
+        y_test, y_pred, label_map=inv_map, time_costs=time_costs,
+        save_dir=os.path.join(EXPR_DIR, tag), tag=tag,
+    )
+    metrics["group"] = "E"
+    metrics["model"] = model_type
+    metrics["sample_step"] = sample_step
+    metrics["hist_window"] = hist_window
+    metrics["info"] = {k: v for k, v in info.items() if k != "feature_names"}
+    _save_result_row(tag, metrics)
+    return metrics
+
+
+def run_group_e1(model_type="rf",
+                 sample_step=DEFAULT_GROUP_E_SAMPLE_STEP,
+                 hist_window=DEFAULT_GROUP_E_HIST_WINDOW):
+    tag = f"group_e1_{model_type}_S{sample_step}_W{hist_window}"
+    logger.info("=== %s ===", tag)
+
+    loader = GroupE1Loader()
+    X_train, y_train, X_val, y_val, X_test, y_test, info = loader.load(
+        sample_step=sample_step, hist_window=hist_window,
+    )
+    feat_time = info["feature_construction_time"]
+
+    clf = IoTClassifier(model_type)
+    clf.train(X_train, y_train)
+    y_pred = clf.predict(X_test)
+
+    time_costs = {
+        "feature_construction_time": feat_time,
+        "train_time": clf.train_time,
+        "inference_time_total": clf.inference_time_total,
+        "inference_time_per_sample": clf.inference_time_per_sample,
+    }
+
+    inv_map = {v: k for k, v in info["label_map"].items()}
+    metrics = compute_metrics(
+        y_test, y_pred, label_map=inv_map, time_costs=time_costs,
+        save_dir=os.path.join(EXPR_DIR, tag), tag=tag,
+    )
+    metrics["group"] = "E1"
+    metrics["model"] = model_type
+    metrics["sample_step"] = sample_step
+    metrics["hist_window"] = hist_window
+    metrics["info"] = {k: v for k, v in info.items() if k != "feature_names"}
+    _save_result_row(tag, metrics)
+    return metrics
+
+
+# ═══════════════════════════════════════════════════
 # 参数敏感性分析
 # ═══════════════════════════════════════════════════
 
@@ -337,18 +420,102 @@ def run_parameter_sensitivity_sequence():
                       os.path.join(FIG_DIR, "sensitivity_seq_H.png"))
 
 
+def run_parameter_sensitivity_group_e():
+    """Group E 参数敏感性: 网格搜索 S × W 组合"""
+    logger.info("=== Group E 参数敏感性分析 ===")
+
+    results = []
+    for S in GROUP_E_SAMPLE_STEPS:
+        for W in GROUP_E_HIST_WINDOWS:
+            for mt in ("rf", "xgb"):
+                m = run_group_e(mt, sample_step=S, hist_window=W)
+                results.append({
+                    "S": S, "W": W, "model": mt,
+                    "accuracy": m["accuracy"],
+                    "macro_f1": m["macro_f1"],
+                    "weighted_f1": m["weighted_f1"],
+                    **m.get("time_costs", {}),
+                })
+
+    df = pd.DataFrame(results)
+    df.to_csv(os.path.join(TABLE_DIR, "sensitivity_group_e.csv"), index=False)
+
+    # 找到最佳 (S*, W*) 组合
+    best_idx = df.groupby(["S", "W"])["macro_f1"].mean().idxmax()
+    best_S, best_W = best_idx
+    logger.info("Group E 最佳参数: S*=%d, W*=%d", best_S, best_W)
+
+    # 绘图: 按 W 分组画 S 的影响
+    _plot_sensitivity_2d(df, "S", "W", "Sample Step (s)",
+                         os.path.join(FIG_DIR, "sensitivity_group_e_S.png"))
+    _plot_sensitivity_2d(df, "W", "S", "History Window (s)",
+                         os.path.join(FIG_DIR, "sensitivity_group_e_W.png"))
+
+
+def run_parameter_sensitivity_group_e1():
+    """Group E1 参数敏感性: 网格搜索 S × W 组合"""
+    logger.info("=== Group E1 参数敏感性分析 ===")
+
+    results = []
+    for S in GROUP_E_SAMPLE_STEPS:
+        for W in GROUP_E_HIST_WINDOWS:
+            for mt in ("rf", "xgb"):
+                m = run_group_e1(mt, sample_step=S, hist_window=W)
+                results.append({
+                    "S": S, "W": W, "model": mt,
+                    "accuracy": m["accuracy"],
+                    "macro_f1": m["macro_f1"],
+                    "weighted_f1": m["weighted_f1"],
+                    **m.get("time_costs", {}),
+                })
+
+    df = pd.DataFrame(results)
+    df.to_csv(os.path.join(TABLE_DIR, "sensitivity_group_e1.csv"), index=False)
+
+    best_idx = df.groupby(["S", "W"])["macro_f1"].mean().idxmax()
+    best_S, best_W = best_idx
+    logger.info("Group E1 最佳参数: S*=%d, W*=%d", best_S, best_W)
+
+    _plot_sensitivity_2d(df, "S", "W", "Sample Step (s)",
+                         os.path.join(FIG_DIR, "sensitivity_group_e1_S.png"))
+    _plot_sensitivity_2d(df, "W", "S", "History Window (s)",
+                         os.path.join(FIG_DIR, "sensitivity_group_e1_W.png"))
+
+
+def _plot_sensitivity_2d(df, x_col, group_col, x_label, filepath):
+    """绘制二维参数敏感性图（按 group_col 分组）"""
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+    for metric, ax in zip(["accuracy", "macro_f1", "weighted_f1"], axes):
+        for (gval, model_name), mdf in df.groupby([group_col, "model"]):
+            mdf = mdf.sort_values(x_col)
+            label = f"{group_col}={gval}, {model_name}"
+            ax.plot(mdf[x_col], mdf[metric], marker="o", label=label)
+        ax.set_xlabel(x_label)
+        ax.set_ylabel(metric)
+        ax.set_title(metric)
+        ax.legend(fontsize=7)
+        ax.grid(True, alpha=0.3)
+    plt.tight_layout()
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+    fig.savefig(filepath, dpi=150)
+    plt.close(fig)
+    logger.info("Sensitivity plot saved: %s", filepath)
+
+
 # ═══════════════════════════════════════════════════
 # 特征重要性分析
 # ═══════════════════════════════════════════════════
 
 def run_feature_importance():
-    """对 Group A / B / C 的 RF 模型做特征重要性分析"""
+    """对 Group A / B / C / E 的 RF 模型做特征重要性分析"""
     logger.info("=== 特征重要性分析 ===")
 
     groups = [
         ("A", GroupALoader, {}),
         ("B", GroupBLoader, {"window_size": DEFAULT_WINDOW_SIZE, "step": DEFAULT_WINDOW_STEP}),
         ("C", GroupCLoader, {"seq_length": DEFAULT_SEQ_LENGTH, "step": DEFAULT_SEQ_STEP}),
+        ("E0", GroupELoader, {"sample_step": DEFAULT_GROUP_E_SAMPLE_STEP, "hist_window": DEFAULT_GROUP_E_HIST_WINDOW}),
+        ("E1", GroupE1Loader, {"sample_step": DEFAULT_GROUP_E_SAMPLE_STEP, "hist_window": DEFAULT_GROUP_E_HIST_WINDOW}),
     ]
 
     for gname, LoaderCls, kwargs in groups:
@@ -404,8 +571,8 @@ def run_all():
     logger.info("===== 阶段 1: 生成 packet-level CSV =====")
     parse_pcap_to_packet_csv()
 
-    # 阶段 2: 四组主实验（默认参数）
-    logger.info("===== 阶段 2: 四组主实验 =====")
+    # 阶段 2: 五组主实验（默认参数）
+    logger.info("===== 阶段 2: 五组主实验 =====")
     for mt in ("rf", "xgb"):
         run_group_a(mt)
     for mt in ("rf", "xgb"):
@@ -414,11 +581,17 @@ def run_all():
         run_group_c(mt)
     for rt in ("lstm", "gru"):
         run_group_d(rt)
+    for mt in ("rf", "xgb"):
+        run_group_e(mt)
+    for mt in ("rf", "xgb"):
+        run_group_e1(mt)
 
     # 阶段 3: 参数敏感性
     logger.info("===== 阶段 3: 参数敏感性分析 =====")
     run_parameter_sensitivity_window()
     run_parameter_sensitivity_sequence()
+    run_parameter_sensitivity_group_e()
+    run_parameter_sensitivity_group_e1()
 
     # 阶段 4: 特征重要性
     logger.info("===== 阶段 4: 特征重要性分析 =====")
@@ -452,7 +625,8 @@ def _save_result_row(tag, metrics):
         "inference_time_total": tc.get("inference_time_total"),
         "inference_time_per_sample": tc.get("inference_time_per_sample"),
     })
-    for key in ("window_size", "window_step", "seq_length", "seq_step"):
+    for key in ("window_size", "window_step", "seq_length", "seq_step",
+                 "sample_step", "hist_window"):
         if key in metrics:
             row[key] = metrics[key]
 

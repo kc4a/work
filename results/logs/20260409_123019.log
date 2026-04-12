@@ -1,0 +1,6 @@
+2026-04-09 12:34:09 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-09 12:34:09 - src.models.classifier - INFO - Training rf model...
+2026-04-09 12:34:18 - src.models.classifier - INFO - Training completed in 9.39s
+2026-04-09 12:36:11 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-09 12:36:11 - src.models.classifier - INFO - Training rf model...
+2026-04-09 12:36:15 - src.models.classifier - INFO - Training completed in 4.53s

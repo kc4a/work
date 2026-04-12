@@ -10,6 +10,8 @@
 | **B** | 时间窗口级 | ~55 维统计特征 | Random Forest / XGBoost |
 | **C** | 定长序列（压缩） | 31 维压缩特征 | Random Forest / XGBoost |
 | **D** | 定长序列（原始） | 25 维 × H 步时序 | LSTM / GRU |
+| **E0** | 混合粒度（拼接） | ~89 维（单包+历史窗口+冷启动） | Random Forest / XGBoost |
+| **E1** | 混合粒度（关系增强） | ~47 维（即时状态+历史基线+关系特征+阶段化冷启动） | Random Forest / XGBoost |
 
 ## 项目结构
 
@@ -26,7 +28,9 @@
 │   │   ├── pcap_loader.py           # PCAP → 包级 CSV 解析
 │   │   ├── packet_level_loader.py   # Group A 数据加载器
 │   │   ├── window_loader.py         # Group B 数据加载器
-│   │   └── sequence_loader.py       # Group C/D 数据加载器
+│   │   ├── sequence_loader.py       # Group C/D 数据加载器
+│   │   ├── group_e_loader.py        # Group E0 混合粒度加载器（baseline）
+│   │   └── group_e1_loader.py       # Group E1 关系增强加载器
 │   ├── features/
 │   │   ├── window_features.py       # 窗口级统计特征计算
 │   │   └── sequence_compressed_features.py  # 序列压缩特征计算
@@ -45,7 +49,9 @@
 │       ├── packet_level.csv         # 包级统一表征
 │       ├── window_samples_*.csv     # Group B 窗口样本
 │       ├── seq_compressed_*.csv     # Group C 压缩序列样本
-│       └── seq_raw_H*_L*/          # Group D 原始序列张量（.npy）
+│       ├── seq_raw_H*_L*/          # Group D 原始序列张量（.npy）
+│       ├── group_e_samples_*.csv   # Group E0 混合粒度样本
+│       └── group_e1_samples_*.csv  # Group E1 关系增强样本
 │
 └── results/
     ├── experiment_report.md         # 实验分析报告
@@ -102,6 +108,8 @@ python main.py --group a --model rf          # Group A + Random Forest
 python main.py --group b --model xgb --window 300  # Group B + XGBoost, W=300s
 python main.py --group c --model rf --seq_len 20   # Group C + RF, H=20
 python main.py --group d --model lstm --seq_len 20  # Group D + LSTM, H=20
+python main.py --group e --model rf --sample_step 10 --hist_window 30   # Group E0
+python main.py --group e1 --model xgb --sample_step 10 --hist_window 60 # Group E1
 ```
 
 ## 数据集
@@ -122,5 +130,7 @@ python main.py --group d --model lstm --seq_len 20  # Group D + LSTM, H=20
 | C | XGBoost | 97.64% | 90.12% | 97.53% |
 | D | LSTM | **99.34%** | **95.90%** | 99.33% |
 | D | GRU | 99.31% | 95.14% | 99.32% |
+| E0 | RF (S=5,W=60) | 95.13% | 91.54% | 95.16% |
+| E1 | XGB (S=10,W=60) | **98.11%** | 92.78% | 98.12% |
 
 详细分析见 [results/experiment_report.md](results/experiment_report.md)。

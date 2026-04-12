@@ -1,0 +1,12 @@
+2026-04-09 14:19:57 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-04-09 14:19:58 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-04-09 14:19:59 - src.evaluation.clf_metrics - INFO - Accuracy=0.0221  Macro-F1=0.0507  Weighted-F1=0.0242
+2026-04-09 14:19:59 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_d_lstm_H50_L10\cross_dataset_group_d_lstm_H50_L10_metrics.json
+2026-04-09 14:19:59 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_d_lstm_H50_L10\cross_dataset_group_d_lstm_H50_L10_per_class.csv
+2026-04-09 14:19:59 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_d_lstm_H50_L10\cross_dataset_group_d_lstm_H50_L10_confusion.png
+2026-04-09 14:21:10 - src.models.rnn_classifier - INFO - Initialized GRU model: input=25, hidden=64, layers=2, classes=18
+2026-04-09 14:21:10 - src.models.rnn_classifier - INFO - Trainer initialized on cpu
+2026-04-09 14:21:10 - src.evaluation.clf_metrics - INFO - Accuracy=0.2152  Macro-F1=0.0826  Weighted-F1=0.0971
+2026-04-09 14:21:10 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_d_gru_H50_L10\cross_dataset_group_d_gru_H50_L10_metrics.json
+2026-04-09 14:21:10 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_d_gru_H50_L10\cross_dataset_group_d_gru_H50_L10_per_class.csv
+2026-04-09 14:21:11 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_d_gru_H50_L10\cross_dataset_group_d_gru_H50_L10_confusion.png

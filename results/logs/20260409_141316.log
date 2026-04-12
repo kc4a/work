@@ -1,0 +1,20 @@
+2026-04-09 14:15:38 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-09 14:15:38 - src.models.classifier - INFO - Training rf model...
+2026-04-09 14:15:50 - src.models.classifier - INFO - Training completed in 11.88s
+2026-04-09 14:15:50 - src.models.classifier - INFO - Model saved to C:\Users\Harry Liao\Documents\homework\results\models\group_c_rf_H50_L10.pkl
+2026-04-09 14:15:55 - src.models.classifier - INFO - Inference: total=0.016s, per_sample=4.4494ms
+2026-04-09 14:15:55 - src.evaluation.clf_metrics - INFO - Accuracy=0.0728  Macro-F1=0.0250  Weighted-F1=0.0258
+2026-04-09 14:15:55 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_c_rf_H50_L10\cross_dataset_group_c_rf_H50_L10_metrics.json
+2026-04-09 14:15:55 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_c_rf_H50_L10\cross_dataset_group_c_rf_H50_L10_per_class.csv
+2026-04-09 14:15:55 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_c_rf_H50_L10\cross_dataset_group_c_rf_H50_L10_confusion.png
+2026-04-09 14:16:53 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-09 14:16:53 - src.models.classifier - INFO - Training xgb model...
+2026-04-09 14:16:56 - src.models.classifier - INFO - Training completed in 3.31s
+2026-04-09 14:16:56 - src.models.classifier - INFO - Model saved to C:\Users\Harry Liao\Documents\homework\results\models\group_c_xgb_H50_L25.pkl
+2026-04-09 14:16:58 - src.models.classifier - INFO - Inference: total=0.014s, per_sample=0.6897ms
+2026-04-09 14:16:58 - src.evaluation.clf_metrics - INFO - Accuracy=0.1367  Macro-F1=0.0547  Weighted-F1=0.0525
+2026-04-09 14:16:58 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_c_xgb_H50_L25\cross_dataset_group_c_xgb_H50_L25_metrics.json
+2026-04-09 14:16:58 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_c_xgb_H50_L25\cross_dataset_group_c_xgb_H50_L25_per_class.csv
+2026-04-09 14:16:58 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\cross_dataset_group_c_xgb_H50_L25\cross_dataset_group_c_xgb_H50_L25_confusion.png
+2026-04-09 14:18:07 - src.models.rnn_classifier - INFO - Initialized LSTM model: input=25, hidden=64, layers=2, classes=18
+2026-04-09 14:18:09 - src.models.rnn_classifier - INFO - Trainer initialized on cpu

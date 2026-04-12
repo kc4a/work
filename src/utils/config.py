@@ -92,6 +92,23 @@ SEQ_STEPS = [5, 10, 20, 25, 50]       # 步长候选
 DEFAULT_SEQ_LENGTH = 20
 DEFAULT_SEQ_STEP = 20
 
+# ── Group E: 混合粒度参数（单包 + 历史窗口） ────
+GROUP_E_SAMPLE_STEPS = [5, 10, 20]       # 采样步长（秒）
+GROUP_E_HIST_WINDOWS = [10, 30, 60]      # 历史窗口大小（秒）
+DEFAULT_GROUP_E_SAMPLE_STEP = 10
+DEFAULT_GROUP_E_HIST_WINDOW = 30
+
+DEFAULT_GROUP_E1_D_MAX = 3               # 当前包最大回溯距离（秒）
+
+GROUP_E_COLD_START_FEATURES = [
+    "hist_duration_actual",
+    "hist_window_ratio",
+    "hist_complete_flag",
+    "hist_packet_count_actual",
+    "packet_rate",
+    "byte_rate",
+]
+
 # ── Group D: 每时间步特征 ────────────────────────
 GROUP_D_FEATURES = [
     "packet_len", "payload_len", "has_payload", "payload_entropy",

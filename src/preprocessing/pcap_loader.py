@@ -59,8 +59,25 @@ def parse_pcap_to_packet_csv(
     pcap_path: str = PCAP_PATH,
     output_path: str = PACKET_CSV_PATH,
     force: bool = False,
+    mac_to_device: dict = None,
+    min_samples: int = None,
+    test_only: bool = False,
 ) -> pd.DataFrame:
-    """解析 PCAP 文件，输出 packet-level CSV。如已缓存则直接加载。"""
+    """解析 PCAP 文件，输出 packet-level CSV。如已缓存则直接加载。
+
+    Parameters
+    ----------
+    mac_to_device : dict, optional
+        自定义 MAC→设备名映射（默认使用 config 中的 MAC_TO_DEVICE）
+    min_samples : int, optional
+        最少包数过滤阈值（默认使用 MIN_SAMPLES_PER_DEVICE）；设为 0 跳过过滤
+    test_only : bool
+        若为 True，所有行 split="test"（用于跨数据集评估）
+    """
+    if mac_to_device is None:
+        mac_to_device = MAC_TO_DEVICE
+    if min_samples is None:
+        min_samples = MIN_SAMPLES_PER_DEVICE
 
     if os.path.exists(output_path) and not force:
         logger.info("加载已缓存的 packet-level CSV: %s", output_path)
@@ -106,11 +123,11 @@ def parse_pcap_to_packet_csv(
             src_mac = _mac_bytes_to_str(eth.src)
             dst_mac = _mac_bytes_to_str(eth.dst)
 
-            device_name = MAC_TO_DEVICE.get(src_mac) or MAC_TO_DEVICE.get(dst_mac)
+            device_name = mac_to_device.get(src_mac) or mac_to_device.get(dst_mac)
             if device_name is None:
                 continue
 
-            if src_mac in MAC_TO_DEVICE:
+            if src_mac in mac_to_device:
                 direction = 0  # outbound
             else:
                 direction = 1  # inbound
@@ -238,29 +255,34 @@ def parse_pcap_to_packet_csv(
     df["delta_t"] = df.groupby("device_id")["ts"].diff().fillna(0.0)
 
     # 过滤样本过少的设备
-    counts = df["device_id"].value_counts()
-    keep_devices = counts[counts >= MIN_SAMPLES_PER_DEVICE].index
-    n_before = df["device_id"].nunique()
-    df = df[df["device_id"].isin(keep_devices)].copy()
-    logger.info("设备过滤: %d → %d (min_samples=%d)",
-                n_before, df["device_id"].nunique(), MIN_SAMPLES_PER_DEVICE)
+    if min_samples > 0:
+        counts = df["device_id"].value_counts()
+        keep_devices = counts[counts >= min_samples].index
+        n_before = df["device_id"].nunique()
+        df = df[df["device_id"].isin(keep_devices)].copy()
+        logger.info("设备过滤: %d → %d (min_samples=%d)",
+                    n_before, df["device_id"].nunique(), min_samples)
 
     # 时间序划分 train / val / test
-    def _assign_split(group):
-        n = len(group)
-        n_train = int(n * TRAIN_RATIO)
-        n_val = int(n * (TRAIN_RATIO + VAL_RATIO))
-        splits = (["train"] * n_train
-                  + ["val"] * (n_val - n_train)
-                  + ["test"] * (n - n_val))
-        group = group.copy()
-        group["split"] = splits
-        return group
+    if test_only:
+        df["split"] = "test"
+        logger.info("跨数据集模式: 所有 %d 行标记为 test", len(df))
+    else:
+        def _assign_split(group):
+            n = len(group)
+            n_train = int(n * TRAIN_RATIO)
+            n_val = int(n * (TRAIN_RATIO + VAL_RATIO))
+            splits = (["train"] * n_train
+                      + ["val"] * (n_val - n_train)
+                      + ["test"] * (n - n_val))
+            group = group.copy()
+            group["split"] = splits
+            return group
 
-    split_parts = []
-    for _, group in df.groupby("device_id", sort=False):
-        split_parts.append(_assign_split(group))
-    df = pd.concat(split_parts, ignore_index=True)
+        split_parts = []
+        for _, group in df.groupby("device_id", sort=False):
+            split_parts.append(_assign_split(group))
+        df = pd.concat(split_parts, ignore_index=True)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False)

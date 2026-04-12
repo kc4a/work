@@ -1,0 +1,144 @@
+2026-04-08 14:49:20 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 14:49:20 - src.models.classifier - INFO - Training rf model...
+2026-04-08 14:49:22 - src.models.classifier - INFO - Training completed in 2.53s
+2026-04-08 14:49:25 - src.models.classifier - INFO - Inference: total=0.219s, per_sample=19.8212ms
+2026-04-08 14:49:25 - src.evaluation.clf_metrics - INFO - Accuracy=0.9297  Macro-F1=0.9050  Weighted-F1=0.9284
+2026-04-08 14:49:25 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W10\group_e_rf_S5_W10_metrics.json
+2026-04-08 14:49:25 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W10\group_e_rf_S5_W10_per_class.csv
+2026-04-08 14:49:25 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W10\group_e_rf_S5_W10_confusion.png
+2026-04-08 14:54:52 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 14:54:52 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 14:55:07 - src.models.classifier - INFO - Training completed in 14.64s
+2026-04-08 14:55:07 - src.models.classifier - INFO - Inference: total=0.174s, per_sample=0.6118ms
+2026-04-08 14:55:07 - src.evaluation.clf_metrics - INFO - Accuracy=0.9176  Macro-F1=0.8733  Weighted-F1=0.9184
+2026-04-08 14:55:07 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W10\group_e_xgb_S5_W10_metrics.json
+2026-04-08 14:55:07 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W10\group_e_xgb_S5_W10_per_class.csv
+2026-04-08 14:55:08 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W10\group_e_xgb_S5_W10_confusion.png
+2026-04-08 15:02:38 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:02:38 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:02:41 - src.models.classifier - INFO - Training completed in 3.17s
+2026-04-08 15:02:44 - src.models.classifier - INFO - Inference: total=0.197s, per_sample=19.4808ms
+2026-04-08 15:02:44 - src.evaluation.clf_metrics - INFO - Accuracy=0.9435  Macro-F1=0.9085  Weighted-F1=0.9427
+2026-04-08 15:02:44 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W30\group_e_rf_S5_W30_metrics.json
+2026-04-08 15:02:44 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W30\group_e_rf_S5_W30_per_class.csv
+2026-04-08 15:02:44 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W30\group_e_rf_S5_W30_confusion.png
+2026-04-08 15:10:26 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:10:26 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:10:40 - src.models.classifier - INFO - Training completed in 13.99s
+2026-04-08 15:10:40 - src.models.classifier - INFO - Inference: total=0.157s, per_sample=0.8354ms
+2026-04-08 15:10:40 - src.evaluation.clf_metrics - INFO - Accuracy=0.8920  Macro-F1=0.8643  Weighted-F1=0.8911
+2026-04-08 15:10:40 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W30\group_e_xgb_S5_W30_metrics.json
+2026-04-08 15:10:40 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W30\group_e_xgb_S5_W30_per_class.csv
+2026-04-08 15:10:41 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W30\group_e_xgb_S5_W30_confusion.png
+2026-04-08 15:19:34 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:19:34 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:19:37 - src.models.classifier - INFO - Training completed in 3.22s
+2026-04-08 15:19:40 - src.models.classifier - INFO - Inference: total=0.197s, per_sample=23.4499ms
+2026-04-08 15:19:40 - src.evaluation.clf_metrics - INFO - Accuracy=0.9513  Macro-F1=0.9154  Weighted-F1=0.9516
+2026-04-08 15:19:40 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W60\group_e_rf_S5_W60_metrics.json
+2026-04-08 15:19:40 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W60\group_e_rf_S5_W60_per_class.csv
+2026-04-08 15:19:40 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S5_W60\group_e_rf_S5_W60_confusion.png
+2026-04-08 15:28:34 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:28:34 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:28:49 - src.models.classifier - INFO - Training completed in 14.61s
+2026-04-08 15:28:49 - src.models.classifier - INFO - Inference: total=0.138s, per_sample=0.6407ms
+2026-04-08 15:28:49 - src.evaluation.clf_metrics - INFO - Accuracy=0.9021  Macro-F1=0.8783  Weighted-F1=0.9004
+2026-04-08 15:28:49 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W60\group_e_xgb_S5_W60_metrics.json
+2026-04-08 15:28:49 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W60\group_e_xgb_S5_W60_per_class.csv
+2026-04-08 15:28:50 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S5_W60\group_e_xgb_S5_W60_confusion.png
+2026-04-08 15:31:38 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:31:38 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:31:39 - src.models.classifier - INFO - Training completed in 1.16s
+2026-04-08 15:31:41 - src.models.classifier - INFO - Inference: total=0.107s, per_sample=17.9776ms
+2026-04-08 15:31:41 - src.evaluation.clf_metrics - INFO - Accuracy=0.9301  Macro-F1=0.9075  Weighted-F1=0.9287
+2026-04-08 15:31:41 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W10\group_e_rf_S10_W10_metrics.json
+2026-04-08 15:31:41 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W10\group_e_rf_S10_W10_per_class.csv
+2026-04-08 15:31:41 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W10\group_e_rf_S10_W10_confusion.png
+2026-04-08 15:34:29 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:34:29 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:34:38 - src.models.classifier - INFO - Training completed in 8.16s
+2026-04-08 15:34:38 - src.models.classifier - INFO - Inference: total=0.097s, per_sample=0.7455ms
+2026-04-08 15:34:38 - src.evaluation.clf_metrics - INFO - Accuracy=0.9142  Macro-F1=0.8779  Weighted-F1=0.9135
+2026-04-08 15:34:38 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W10\group_e_xgb_S10_W10_metrics.json
+2026-04-08 15:34:38 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W10\group_e_xgb_S10_W10_per_class.csv
+2026-04-08 15:34:38 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W10\group_e_xgb_S10_W10_confusion.png
+2026-04-08 15:38:32 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:38:32 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:38:33 - src.models.classifier - INFO - Training completed in 1.38s
+2026-04-08 15:38:35 - src.models.classifier - INFO - Inference: total=0.096s, per_sample=19.3226ms
+2026-04-08 15:38:35 - src.evaluation.clf_metrics - INFO - Accuracy=0.9436  Macro-F1=0.9069  Weighted-F1=0.9428
+2026-04-08 15:38:35 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W30\group_e_rf_S10_W30_metrics.json
+2026-04-08 15:38:35 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W30\group_e_rf_S10_W30_per_class.csv
+2026-04-08 15:38:36 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W30\group_e_rf_S10_W30_confusion.png
+2026-04-08 15:42:27 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:42:27 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:42:36 - src.models.classifier - INFO - Training completed in 8.59s
+2026-04-08 15:42:36 - src.models.classifier - INFO - Inference: total=0.089s, per_sample=0.7839ms
+2026-04-08 15:42:36 - src.evaluation.clf_metrics - INFO - Accuracy=0.8609  Macro-F1=0.8449  Weighted-F1=0.8534
+2026-04-08 15:42:36 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W30\group_e_xgb_S10_W30_metrics.json
+2026-04-08 15:42:36 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W30\group_e_xgb_S10_W30_per_class.csv
+2026-04-08 15:42:36 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W30\group_e_xgb_S10_W30_confusion.png
+2026-04-08 15:47:06 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:47:06 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:47:08 - src.models.classifier - INFO - Training completed in 1.64s
+2026-04-08 15:47:10 - src.models.classifier - INFO - Inference: total=0.097s, per_sample=19.3525ms
+2026-04-08 15:47:10 - src.evaluation.clf_metrics - INFO - Accuracy=0.9468  Macro-F1=0.9080  Weighted-F1=0.9483
+2026-04-08 15:47:10 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W60\group_e_rf_S10_W60_metrics.json
+2026-04-08 15:47:10 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W60\group_e_rf_S10_W60_per_class.csv
+2026-04-08 15:47:10 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S10_W60\group_e_rf_S10_W60_confusion.png
+2026-04-08 15:51:41 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:51:41 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:51:48 - src.models.classifier - INFO - Training completed in 7.39s
+2026-04-08 15:51:48 - src.models.classifier - INFO - Inference: total=0.080s, per_sample=0.7459ms
+2026-04-08 15:51:48 - src.evaluation.clf_metrics - INFO - Accuracy=0.9058  Macro-F1=0.8777  Weighted-F1=0.9047
+2026-04-08 15:51:48 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W60\group_e_xgb_S10_W60_metrics.json
+2026-04-08 15:51:48 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W60\group_e_xgb_S10_W60_per_class.csv
+2026-04-08 15:51:49 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S10_W60\group_e_xgb_S10_W60_confusion.png
+2026-04-08 15:53:15 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:53:15 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:53:16 - src.models.classifier - INFO - Training completed in 0.55s
+2026-04-08 15:53:18 - src.models.classifier - INFO - Inference: total=0.074s, per_sample=22.9273ms
+2026-04-08 15:53:18 - src.evaluation.clf_metrics - INFO - Accuracy=0.9284  Macro-F1=0.9077  Weighted-F1=0.9274
+2026-04-08 15:53:18 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W10\group_e_rf_S20_W10_metrics.json
+2026-04-08 15:53:18 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W10\group_e_rf_S20_W10_per_class.csv
+2026-04-08 15:53:19 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W10\group_e_rf_S20_W10_confusion.png
+2026-04-08 15:54:45 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:54:45 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:54:49 - src.models.classifier - INFO - Training completed in 4.33s
+2026-04-08 15:54:50 - src.models.classifier - INFO - Inference: total=0.056s, per_sample=0.6374ms
+2026-04-08 15:54:50 - src.evaluation.clf_metrics - INFO - Accuracy=0.9105  Macro-F1=0.8872  Weighted-F1=0.9101
+2026-04-08 15:54:50 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W10\group_e_xgb_S20_W10_metrics.json
+2026-04-08 15:54:50 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W10\group_e_xgb_S20_W10_per_class.csv
+2026-04-08 15:54:50 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W10\group_e_xgb_S20_W10_confusion.png
+2026-04-08 15:56:49 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 15:56:49 - src.models.classifier - INFO - Training rf model...
+2026-04-08 15:56:50 - src.models.classifier - INFO - Training completed in 0.78s
+2026-04-08 15:56:52 - src.models.classifier - INFO - Inference: total=0.062s, per_sample=20.6196ms
+2026-04-08 15:56:52 - src.evaluation.clf_metrics - INFO - Accuracy=0.9426  Macro-F1=0.9055  Weighted-F1=0.9419
+2026-04-08 15:56:52 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W30\group_e_rf_S20_W30_metrics.json
+2026-04-08 15:56:52 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W30\group_e_rf_S20_W30_per_class.csv
+2026-04-08 15:56:52 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W30\group_e_rf_S20_W30_confusion.png
+2026-04-08 15:58:51 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 15:58:51 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 15:58:55 - src.models.classifier - INFO - Training completed in 4.00s
+2026-04-08 15:58:55 - src.models.classifier - INFO - Inference: total=0.047s, per_sample=0.6648ms
+2026-04-08 15:58:55 - src.evaluation.clf_metrics - INFO - Accuracy=0.9232  Macro-F1=0.9115  Weighted-F1=0.9221
+2026-04-08 15:58:55 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W30\group_e_xgb_S20_W30_metrics.json
+2026-04-08 15:58:55 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W30\group_e_xgb_S20_W30_per_class.csv
+2026-04-08 15:58:56 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W30\group_e_xgb_S20_W30_confusion.png
+2026-04-08 16:01:12 - src.models.classifier - INFO - Initialized rf classifier
+2026-04-08 16:01:12 - src.models.classifier - INFO - Training rf model...
+2026-04-08 16:01:12 - src.models.classifier - INFO - Training completed in 0.90s
+2026-04-08 16:01:15 - src.models.classifier - INFO - Inference: total=0.063s, per_sample=22.3324ms
+2026-04-08 16:01:15 - src.evaluation.clf_metrics - INFO - Accuracy=0.9466  Macro-F1=0.9082  Weighted-F1=0.9485
+2026-04-08 16:01:15 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W60\group_e_rf_S20_W60_metrics.json
+2026-04-08 16:01:15 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W60\group_e_rf_S20_W60_per_class.csv
+2026-04-08 16:01:15 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_rf_S20_W60\group_e_rf_S20_W60_confusion.png
+2026-04-08 16:03:30 - src.models.classifier - INFO - Initialized xgb classifier
+2026-04-08 16:03:30 - src.models.classifier - INFO - Training xgb model...
+2026-04-08 16:03:34 - src.models.classifier - INFO - Training completed in 3.79s
+2026-04-08 16:03:34 - src.models.classifier - INFO - Inference: total=0.040s, per_sample=0.7015ms
+2026-04-08 16:03:34 - src.evaluation.clf_metrics - INFO - Accuracy=0.8980  Macro-F1=0.8705  Weighted-F1=0.8961
+2026-04-08 16:03:34 - src.evaluation.clf_metrics - INFO - Metrics JSON saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W60\group_e_xgb_S20_W60_metrics.json
+2026-04-08 16:03:34 - src.evaluation.clf_metrics - INFO - Per-class CSV saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W60\group_e_xgb_S20_W60_per_class.csv
+2026-04-08 16:03:35 - src.evaluation.clf_metrics - INFO - Confusion matrix plot saved: C:\Users\Harry Liao\Documents\homework\results\experiments\group_e_xgb_S20_W60\group_e_xgb_S20_W60_confusion.png
