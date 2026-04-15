@@ -134,3 +134,100 @@ python main.py --group e1 --model xgb --sample_step 10 --hist_window 60 # Group 
 | E1 | XGB (S=10,W=60) | **98.11%** | 92.78% | 98.12% |
 
 详细分析见 [results/experiment_report.md](results/experiment_report.md)。
+
+## 新增跨数据集验证
+
+除原有基于 `IoT_2023-07-24.pcap` 的跨数据集测试外，项目目前又补充了两组新的跨数据集验证，用于区分“中等强度跨域”和“强异构外部跨域”两类场景。
+
+### 1. UNSW-IoTraffic 子集跨数据集验证
+
+该实验使用 `data/pcaps` 下下载的 `UNSW-IoTraffic` 设备级 `PCAP`，从与当前标签体系直接重叠的设备中抽取连续流量，构造新的测试集：
+
+- 测试 CSV：`data/processed/unsw_iotraffic_subset_packet_level.csv`
+- 汇总结果：`results/tables/unsw_iotraffic_subset_cross_summary.csv`
+- 实验脚本：`experiments/cross_dataset_unsw_iotraffic_subset.py`
+- 分析报告：
+  - `results/UNSW-IoTraffic子集跨数据集验证报告.md`
+  - `results/UNSW-IoTraffic子集跨数据集验证报告.docx`
+
+该实验的性质更接近：
+
+- 同设备跨时间验证
+- 跨采集批次验证
+- 中等强度跨数据集验证
+
+完整结果如下：
+
+| 组 | 模型 | Accuracy | Macro-F1 | Weighted-F1 |
+|----|------|----------|----------|-------------|
+| A | RF | 0.5921 | 0.6183 | 0.6183 |
+| A | XGB | 0.5735 | 0.5928 | 0.5928 |
+| B | RF | **0.8603** | **0.8280** | **0.8636** |
+| B | XGB | 0.7425 | 0.6956 | 0.7100 |
+| C | RF | 0.5230 | 0.4196 | 0.5395 |
+| C | XGB | 0.3637 | 0.2766 | 0.3556 |
+| D | LSTM | 0.6087 | 0.4693 | 0.6033 |
+| D | GRU | 0.6041 | 0.4919 | 0.5973 |
+| E0 | RF | 0.5904 | 0.7656 | 0.6200 |
+| E0 | XGB | 0.5854 | 0.7698 | 0.6060 |
+| E1 | RF | 0.8588 | 0.7884 | 0.8628 |
+| E1 | XGB | 0.6686 | 0.6214 | 0.6603 |
+
+该结果说明：
+
+- 在同设备跨时间、跨批次条件下，`B-RF` 与 `E1-RF` 表现最好；
+- 窗口级统计和关系增强特征对这类中等强度跨域更稳；
+- `C/D` 的高粒度时序表示在该场景下并未体现额外优势。
+
+### 2. YourThings 家族级跨数据集验证
+
+该实验使用 `data/2018/03/20` 下的 `YourThings` 原始连续切片和根目录的 `device_mapping.csv`，不再做设备级精确匹配，而是将训练集与测试集统一映射到更粗粒度的行为家族标签，如 `camera`、`speaker`、`hub`。
+
+- 测试 CSV：`data/processed/yourthings_family_packet_level.csv`
+- 汇总结果：`results/tables/yourthings_family_cross_summary.csv`
+- 训练/测试家族计数：
+  - `results/tables/yourthings_family_train_counts.csv`
+  - `results/tables/yourthings_family_test_counts.csv`
+- 实验脚本：`experiments/cross_dataset_yourthings_family.py`
+- 分析报告：
+  - `results/YourThings家族级跨数据集验证报告.md`
+  - `results/YourThings家族级跨数据集验证报告.docx`
+
+该实验的性质更接近：
+
+- 强异构外部家庭网络验证
+- 家族级跨数据集验证
+- 对设备级跨域能力的补充分析
+
+共同家族标签共有 6 类：
+
+- `baby_monitor`
+- `camera`
+- `hub`
+- `motion_sensor`
+- `plug_switch`
+- `speaker`
+
+完整结果如下：
+
+| 组 | 模型 | Accuracy | Macro-F1 | Weighted-F1 |
+|----|------|----------|----------|-------------|
+| A | RF | 0.1709 | 0.1439 | 0.1439 |
+| A | XGB | 0.1089 | 0.0968 | 0.0968 |
+| B | RF | 0.0414 | 0.0298 | 0.0217 |
+| B | XGB | 0.1329 | 0.1472 | 0.1078 |
+| C | RF | 0.2773 | 0.2191 | 0.2191 |
+| C | XGB | 0.2123 | 0.1332 | 0.1332 |
+| D | LSTM | **0.3695** | **0.2957** | 0.2957 |
+| D | GRU | 0.3148 | 0.2252 | 0.2253 |
+| E0 | RF | 0.1740 | 0.1610 | 0.2058 |
+| E0 | XGB | 0.1935 | 0.1530 | 0.2423 |
+| E1 | RF | 0.3495 | 0.2175 | **0.3912** |
+| E1 | XGB | 0.2698 | 0.2135 | 0.3281 |
+
+该结果说明：
+
+- 在强异构外部家庭网络中，设备级强判别特征大面积失效；
+- 即使放宽到家族级标签，整体可迁移性仍然有限；
+- `D-LSTM` 和 `E1-RF` 相对更强，说明抽象时序模式和关系特征更有跨域保留价值；
+- 因此，这组实验证明的是“有限的家族级可迁移性”，而不是稳健的设备级跨域泛化能力。

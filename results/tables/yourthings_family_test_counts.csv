@@ -1,0 +1,8 @@
+family_id,packets,devices
+baby_monitor,50000,1
+camera,50000,8
+hub,50000,8
+motion_sensor,50000,1
+plug_switch,50000,1
+speaker,50000,5
+light,23411,3
